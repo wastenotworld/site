@@ -3241,6 +3241,11 @@ cssstyle@^1.1.1:
   dependencies:
     cssom "0.3.x"
 
+custom-event-polyfill@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/custom-event-polyfill/-/custom-event-polyfill-1.0.6.tgz#6b026e81cd9f7bc896bd6b016a427407bb068db1"
+  integrity sha512-3FxpFlzGcHrDykwWu+xWVXZ8PfykM/9/bI3zXb953sh+AjInZWcQmrnmvPoZgiqNjmbtTm10PWvYqvRW527x6g==
+
 cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
@@ -3646,6 +3651,14 @@ easy-extender@^2.3.4:
   integrity sha512-8cAwm6md1YTiPpOvDULYJL4ZS6WfM5/cTeVVh4JsvyYZAoqlRVUpHL9Gr5Fy7HA6xcSZicUia3DeAgO3Us8E+Q==
   dependencies:
     lodash "^4.17.10"
+
+easydropdown@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/easydropdown/-/easydropdown-4.2.0.tgz#9d4b9ac5c24cf0aa9b364e7d25c94cd5492f55ea"
+  integrity sha512-oicfb/8VT2e9s1nCqzBEB2qCXvuJl4nQnHT6ej+HG8Ot6vNkymxKOL9qE1G4h2uMe16xFW9NF1/WiOIF6yX00g==
+  dependencies:
+    custom-event-polyfill "1.0.6"
+    helpful-merge "0.2.0"
 
 eazy-logger@^3:
   version "3.0.2"
@@ -4734,6 +4747,11 @@ he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
+helpful-merge@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/helpful-merge/-/helpful-merge-0.2.0.tgz#24f5829ef1b8fe78698e5a0432da281f79e1615b"
+  integrity sha512-lqbBl4TU15okBJ4C8hx7PBEcqtaxxsWLOypdhpsZbRvBTaibNqTXWpG6W59S0FTBeL7hx3K4MXdz8EJVcZ3CCQ==
 
 hex-color-regex@^1.1.0:
   version "1.1.0"

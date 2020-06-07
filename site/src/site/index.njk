@@ -2,6 +2,9 @@
 title:  Waste Not
 subtitle: make that better world
 layout: layouts/base.njk
+pagination:
+  data: listings
+  size: 2
 ---
 
 <div class='hero bb f jcc ais rel'>
@@ -9,18 +12,24 @@ layout: layouts/base.njk
     <div class='container ac mxa container--l'>
       <h1 class='cg'>Sustainability. Searchability.</h1>
       <p class='s30 serif container--m mxa'> Waste Not is a simple way to search an open-source database of sustainable suppliers. Find better:</p>
+      <select name="navigation" id="navigationalDrop" data-component='easy'>
+        <option value="">Search Materials</option>
+        <option value="1">Filler and Packing</option>
+        <option value="2">Shippers and Boxes</option>
+        <option value="3">Tape and Stickers</option>
+      </select>
     </div>
   </div>
-  <img class='hero__image y block abs top x left' src='images/h-plastic-items.jpg' />
+  <img class='hero__image y block abs top x left' src='/images/h-plastic-items.jpg' />
 </div>
 
 <div class='split f jcb fw aic'>
   <div class='x c50 ac split__text f jcc aic'>
     <div class='p15 split__text-inner mxa'>
-      <p class='s40 bold' data-component='pop'>Doing better is the whole world’s business. We’re making it easier to make <span data-pop='None of us are perfect. All of us can be better.' class='cg js-pop'>better choices</span> for commerce. From packaging to interiors, we believe <span data-pop='We provide more environmental short term options while you’re on the road to zero waste.' class='cg js-pop'>sustainability</span> shouldn’t be a trade secret.</p>
+      <p class='s40 bold my1' data-component='pop'>Doing better is the whole world’s business. We’re making it easier to make <span data-pop='None of us are perfect. All of us can be better.' class='cg js-pop'>better choices</span> for commerce. From packaging to interiors, we believe <span data-pop='We provide more environmental short term options while you’re on the road to zero waste.' class='cg js-pop'>sustainability</span> shouldn’t be a trade secret.</p>
     </div>
   </div>
-  <img class='block x c50' src='images/h-no-thanks.jpg' />
+  <img class='block x c50' src='/images/h-no-thanks.jpg' />
 </div>
 
 <div class='beliefs bt bcw'>
@@ -30,21 +39,35 @@ layout: layouts/base.njk
   <div class='f jcb aist fw'>
     <div class='x c33 al p15 bb beliefs__single'>
       <div class='mxa'>
-        <img src='images/litte-steps.png' alt='little steps' />
+        <img src='/images/litte-steps.png' alt='little steps' />
         <p class='serif'>Being truly zero waste is costly and difficult. We believe in hatching a big plan, but taking immediate little steps as you can: right now. One switch can make a world of difference.</p>
       </div>
     </div>
     <div class='x c33 al p15 bb beliefs__single'>
       <div class='mxa'>
-        <img src='images/open-source.png' alt='open source' />
+        <img src='/images/open-source.png' alt='open source' />
         <p class='serif'>Our entire repository is on GitHub. You can learn from it, add new features, or help us audit and approve listings. Not on GitHub? You can still help: click the Open Source symbol on listings to report an issue –– we’ll send it there.</p>
       </div>
     </div>
     <div class='x c33 al p15 bb beliefs__single'>
       <div class='mxa'>
-        <img src='images/waste-not.png' alt='open source' />
+        <img src='/images/waste-not.png' alt='open source' />
         <p class='serif'>The end goal is to empower brands and consumers alike to waste not and want better. None of us are perfect. All of us can be better. Our planet demands a better supply, and Waste Not is a small step in making it easier.</p>
       </div>
     </div>
+  </div>
+</div>
+
+<div class='h__listings'>
+  <div class='outer p1'>
+    <div class='container ac'>
+      <h5 class='s20 caps serif'>!! Just Added !!</h5>
+      <h3 class='s40 h__listings-rotate'>Sustainability is in<br />the budget</h3>
+    </div>
+    {%- for listing in pagination.items -%}
+      <div class='row ac x'>
+        {% include 'listing-card.njk' %}
+      </div>
+    {%- endfor -%}
   </div>
 </div>

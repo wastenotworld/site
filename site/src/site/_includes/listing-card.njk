@@ -1,0 +1,6 @@
+<div class='listing__card'>
+  <span>  taco
+    <a class='h2 caps underline-hover' href='/listings/{{ listing.content.main.slug.current | slug }}/'>{{ listing.content.main.name  }}</a>
+    {% if listing.content.main.url %}<a class='external h3' rel='noopener' href='{{ listing.content.main.url }}' target='_blank'>⬀</a>{% endif %}
+  </span>
+</div>

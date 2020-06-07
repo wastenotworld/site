@@ -45,7 +45,7 @@ body {
   margin-top: 30px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
@@ -84,15 +84,12 @@ a {
       border: 2px dashed currentColor;
     }
   }
-  &.h2 {
-    &:focus {
-      &:before {
-        @media (min-width: $mid) {
-          height: calc(100% + 10px);
-          top: -10px;
-        }
-      }
-    }
+}
+
+.s20 {
+  font-size: 16px;
+  @media (min-width: 800px) {
+    font-size: 20px;
   }
 }
 

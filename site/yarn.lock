@@ -7033,6 +7033,14 @@ pn@^1.1.0:
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
 
+poppy@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/poppy/-/poppy-1.0.3.tgz#86a1c09a641208af3b956d724c323995c54de518"
+  integrity sha512-MsWQFjd3s1gT+0GQfdHnny97nXKfXu3pH7FqdU8iZJl4+ujzzRRdLI0sEZlpHF4QN0xFbOo3+DgwXHrr71IUpQ==
+  dependencies:
+    tackjs "^1.1.2"
+    tarry.js "^0.3.1"
+
 portscanner@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/portscanner/-/portscanner-2.1.1.tgz#eabb409e4de24950f5a2a516d35ae769343fbb96"
@@ -10115,10 +10123,20 @@ symbol-tree@^3.2.2:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
+tackjs@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/tackjs/-/tackjs-1.1.2.tgz#0abd6aad1af26d53f4dc4b2e1ca6d50844331d3a"
+  integrity sha512-4VWhXNAcEmQ4v6L48alEmfV0XSwQTcQNA5smmAXOqDn9e5oVXmQytYwultaqoHzbaP/K193ya1FtzFzkzZYf0A==
+
 tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
   integrity sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
+
+tarry.js@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/tarry.js/-/tarry.js-0.3.1.tgz#d507de52939192a0b5b1caad237bd1710c99040b"
+  integrity sha512-HKMYjYGHL3s+LlDgJH+LPOw8g6svjkPkJwtZu6oBfNkZNqu/1OIJXSw4Q+B7QqAV95bHqjClRFIB0QIlrqoLCg==
 
 tcomb@^3.2.21:
   version "3.2.29"

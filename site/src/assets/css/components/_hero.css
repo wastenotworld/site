@@ -7,5 +7,8 @@
   }
   &__inner {
     padding-top: 80px;
+    p {
+      max-width: 660px;
+    }
   }
 }

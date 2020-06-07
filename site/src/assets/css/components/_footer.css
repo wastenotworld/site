@@ -39,6 +39,8 @@
       padding: 0.8rem 2rem 0.6rem;
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
       cursor: pointer;
       &:hover {
         background-color: var(--white);

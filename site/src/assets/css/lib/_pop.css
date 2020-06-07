@@ -1,0 +1,12 @@
+.poppy {
+  position: absolute;
+  z-index: 9999;
+  top: 0; left: 0;
+  background-color: var(--litegreen);
+  border: 1px solid black;
+  max-width: 200px;
+  padding: 1rem;
+  &:focus {
+    outline: none;
+  }
+}

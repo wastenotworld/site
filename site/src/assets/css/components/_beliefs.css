@@ -1,0 +1,29 @@
+.beliefs {
+  &__single {
+    img {
+      max-height: 80px;
+      width: auto;
+      margin-bottom: 1rem;
+      @media (min-width: 800px) {
+        max-height: 100px;
+      }
+    }
+    @media (min-width: 800px) {
+      border-bottom: none;
+      border-right: 1px solid black;
+      padding: 3rem 2rem;
+      &:last-child {
+        border-right: none;
+      }
+      p {
+        max-width: 300px;
+      }
+      > div {
+        max-width: 340px;
+      }
+    }
+  }
+  @media (min-width: 800px) {
+    border-bottom: 1px solid black;
+  }
+}

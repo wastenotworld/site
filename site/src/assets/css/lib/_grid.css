@@ -4,3 +4,9 @@
     width: calc(50%);
   }
 }
+
+.c33 {
+  @media (min-width: 800px) {
+    width: calc(33.333%);
+  }
+}

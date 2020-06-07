@@ -1,9 +1,12 @@
 .header {
   width: calc(100vw);
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
   height: 64px;
   &__logo {
     max-width: 226px;
+    position: relative;
+    top: 3px;
     svg {
       width: 100%;
       height: auto;

@@ -7,3 +7,7 @@
 .bb {
   border-bottom: 1px solid black;
 }
+
+.bt {
+  border-top: 1px solid black;
+}

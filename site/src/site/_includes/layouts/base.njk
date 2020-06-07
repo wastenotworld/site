@@ -20,7 +20,7 @@
     </script> 
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %} data-component='theme'>
-    <div class="container">
+    <div class="">
       {% include "header.njk" %}
       <div class='main' id='root'>
         {{ content | safe }}

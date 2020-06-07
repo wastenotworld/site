@@ -1,0 +1,12 @@
+.split {
+  &__text  {
+    @media (min-width: 800px) {
+      text-align: left;
+      &-inner {
+        max-width: 600px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+  }
+}

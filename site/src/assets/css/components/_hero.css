@@ -1,0 +1,11 @@
+.hero {
+  height: 100vh;
+  max-height: 800px;
+  &__image {
+    object-fit: cover;
+    object-position: center center;
+  }
+  &__inner {
+    padding-top: 80px;
+  }
+}

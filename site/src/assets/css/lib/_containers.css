@@ -5,3 +5,7 @@
 .container--m {
   max-width: 800px;
 }
+
+.container--l {
+  max-width: 1100px;
+}

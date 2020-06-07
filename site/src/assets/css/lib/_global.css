@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body, html {
+  background-color: #EBE5DE;
+}
 
 ::-moz-selection {
   /* background-color: $text-color; */
@@ -15,7 +18,6 @@
   margin-left: auto;
   margin-right: auto;
   width: calc(100vw - 3rem);
-  text-align: left;
 }
 
 .main {

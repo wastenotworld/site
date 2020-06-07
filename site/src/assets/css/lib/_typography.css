@@ -24,6 +24,10 @@ body {
   }
 }
 
+.s13 {
+  font-size: 13px;
+}
+
 .s30 {
   font-size: 22px;
   line-height: 1.4;
@@ -131,6 +135,10 @@ p {
   font-size: 16px;
 }
 
+.s16 {
+  font-size: 16px;
+}
+
 ul, ol {
   padding-left: 1em;
   &.no-style {
@@ -140,6 +148,10 @@ ul, ol {
 
 .caps {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .bold {

@@ -1,14 +1,18 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-user
+templateClass: tmpl-listing
 renderData:
-  title: "{{user.content.main.name}}"
+  title: "{{listing.content.main.name}}"
 ---
 
-{% set title = user.content.main.name %}
+{% set title = listing.content.main.name %}
 
-<div class='mt1 user pt1'>
-  <div class='ac'>
-    {{title}}
+<div class='bcy p1 bb'>
+  <p class='m0 p0'>You've been shared a listing from Waste Not: a simple. searchable index of sustainable materials and suppliers.</p>
+</div>
+
+<div class='listing__landing bclg py1 bb'>
+  <div class='container--l mxa'>
+    {% include 'listing-card.njk' %}
   </div>
 </div>

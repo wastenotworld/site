@@ -6,6 +6,7 @@
   --green: #5CB55D;
   --litegreen: #8CD08C;
   --purple: #F3D8EC;
+  --yellow: #F6EF73;
 }
 
 
@@ -13,8 +14,16 @@
   background-color: black;
 }
 
+.bcy {
+  background-color: var(--yellow);
+}
+
 .bcw {
   background-color: var(--white);
+}
+
+.bclg {
+  background-color: var(--litegreen);
 }
 
 .bcp {

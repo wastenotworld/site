@@ -1,0 +1,90 @@
+.listing {
+  &__landing {
+    padding: 3.2rem 0 3rem;
+    @media (min-width: 700px) {
+      padding: 5.2rem 0 5rem;
+    }
+  }
+  &__expand {
+    @media (min-width: 700px) {
+      padding-right: 20px;
+    }
+  }
+  &__card {
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    &-country {
+      @media (min-width: 700px) {
+        width: 200px;
+        border: 1px solid black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        position: absolute;
+        height: calc(100% + 2px);
+        top: -1px;
+        right: -1px;
+      }
+    }
+    &-title {
+      padding: 0.4rem 1rem;
+      @media (min-width: 700px) {
+        width: auto;
+        padding-left: 20px;
+      }
+    }
+    &-description {
+      order: 2;
+      @media (min-width: 700px) {
+        width: calc(50%);
+        max-width: 460px;
+        margin-left: 14px;
+        margin-right: 14px;
+        > div {
+          max-width: 340px;
+        }
+      }
+    }
+    &-content {
+      @media (min-width: 700px) {
+        flex-wrap: nowrap;
+        padding: 20px;
+      }
+    }
+    &-tags {
+      width: calc(50% - 10px);
+      order: 1;
+      ul {
+        margin-left: 0;
+        padding-left: 0;
+      }
+      li {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 0;
+        border-bottom: 1px solid black;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      @media (min-width: 700px) {
+        order: 3;
+        width: 160px;
+        li {
+          padding: 4px 0;
+        }
+      }
+    }
+    &-image {
+      order: 1;
+      width: calc(50% - 10px);
+
+      @media (min-width: 700px) {
+        max-width: 250px;
+      }
+    }
+  }
+}

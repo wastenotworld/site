@@ -60,14 +60,20 @@ pagination:
 
 <div class='h__listings'>
   <div class='outer p1'>
-    <div class='container ac'>
+    <div class='container container--l rel ac'>
       <h5 class='s20 caps serif'>!! Just Added !!</h5>
-      <h3 class='s40 h__listings-rotate'>Sustainability is in<br />the budget</h3>
+      <h3 class='s40 mxa h__listings-rotate'>Sustainability is in the budget</h3>
+      <img src='/images/sun.png' alt='sun' class='abs z1 h__listings-sun top right' />
     </div>
-    {%- for listing in pagination.items -%}
-      <div class='row ac x'>
-        {% include 'listing-card.njk' %}
-      </div>
-    {%- endfor -%}
+    <div class='container--l mxa'>
+      {%- for listing in pagination.items -%}
+        <div class='row ac x'>
+          {% include 'listing-card.njk' %}
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class='container--l mxa p15'>
+      <a href='' class='button caps'>!! Find Clean Connections !!</a>
+    </div>
   </div>
 </div>

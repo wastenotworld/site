@@ -27,9 +27,8 @@
 @import './components/_h-listings.css';
 @import './components/_rows.css';
 @import './components/_footer.css';
-@import './components/_user.css';
-
 
 @import './components/_hero.css';
 @import './components/_split.css';
 @import './components/_beliefs.css';
+@import './components/_listing.css';

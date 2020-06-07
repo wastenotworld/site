@@ -1,9 +1,28 @@
 .h {
   &__listings {
     margin: 2rem 0;
+    @media (min-width: 800px) {
+      margin: 3rem 0;
+    }
     &-rotate {
       transform: rotate(-4deg);
-      margin: 1rem 0;
+      margin: 1rem auto;
+      max-width: 300px;
+      @media (min-width: 800px) {
+        margin: 2rem auto 3rem;
+      }
+    }
+    &-sun {
+      max-width: 200px;
+      @media (min-width: 800px) {
+        max-width: 300px;
+        right: -100px;
+        top: -80px;
+      }
+      @media (min-width: 1000px) {
+        right: -140px;
+        max-width: 340px;
+      }
     }
   }
 }

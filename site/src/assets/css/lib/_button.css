@@ -1,7 +1,12 @@
-button, .button {
+.button {
   padding: 1rem 1.4rem;
   background-color: var(--green);
   border-radius: 13px;
   border: 1px solid black;
   letter-spacing: 0.5px;
+}
+
+button.naked {
+  border: none;
+  background-color: transparent;
 }

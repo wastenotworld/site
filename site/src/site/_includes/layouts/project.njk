@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-pro
+renderData:
+  title: "{{project.content.main.name}}"
+---
+
+{% set title = project.content.main.name %}
+
+<div class='mt1 pt1'>
+  <h1>{{ title }} {% if project.content.main.url %}<a class='' href='{{ project.content.main.url }}' target='_blank'>⬀</a>{% endif %}</h1>
+  <div class='project__flex f fw jcb ais x'>
+    <div class='project__info x mb1 al'>
+      <p class='mt05'>Credits &mdash;</p>
+      {{project.info | markdownify | safe }}
+    </div>
+    <div class='x project__images'>
+      {% if project.video %}
+        <div class='project__single-box rel'>
+          <span class='dots'></span>
+          {% if project.content.main.url %}<a class='abs border project__link' href='{{ project.content.main.url }}' target='_blank'>website</a>{% endif %}
+          <video class='block x project__single-image ' autoplay='true' loop='true' poster="{{project.image.url}}?h=500">
+            <source src="{{project.video}}" />
+          </video>
+        </div>
+      {% else %}
+        <div class='project__single-box rel'>
+          <span class='dots'></span>
+
+          {% if project.content.main.url %}<a class='abs border project__link' href='{{ project.content.main.url }}' target='_blank'>website</a>{% endif %}
+          <img class='block project__single-image x' src="{{project.image.url}}?h=500" alt="{{project.cotent.main.name}}" />
+        </div>
+      {% endif %}
+      <div>
+        {% for screen in project.content.main.siteScreens %}
+          <div class='project__single-box rel'>
+            <span class='dots'></span>
+            {% if project.content.main.url %}<a class='abs border project__link' href='{{ project.content.main.url }}' target='_blank'>website</a>{% endif %}
+            <img class='block project__single-image x' src="{{screen.image.url}}?w=900" alt="{{project.cotent.main.name}}" />
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

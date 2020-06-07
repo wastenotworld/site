@@ -1,0 +1,29 @@
+
+
+/* colours */
+:root {
+  --white: #F7F5EE;
+  --green: #5CB55D;
+  --purple: #F3D8EC;
+}
+
+
+.bcb {
+  background-color: black;
+}
+
+.bcw {
+  background-color: var(--white);
+}
+
+.bcp {
+  background-color: var(--purple);
+}
+
+.cw {
+  color: white;
+}
+
+.cg {
+  color: var(--green);
+}

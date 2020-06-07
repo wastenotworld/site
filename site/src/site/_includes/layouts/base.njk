@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#DA5E50">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/image/favicon192.png">
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="stylesheet" href="/bundle/css/styles.css" />
+
+    {% include "seo.njk" %}
+    <title>{{ renderData.title or title }}</title>
+    <script>
+      if ("serviceWorker" in navigator && !/localhost/.test(document.location.href)) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script> 
+  </head>
+  <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %} data-component='theme'>
+    <div class="container">
+      {% include "header.njk" %}
+      <div class='main' id='root'>
+        {{ content | safe }}
+      </div>
+    </div>
+    {% include "footer.njk" %}
+    <script src='/bundle/scripts/index.js'></script>
+  </body>
+</html>
+
+
+

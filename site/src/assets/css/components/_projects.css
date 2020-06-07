@@ -1,0 +1,128 @@
+.project {
+  &__single {
+    &-image {
+      /* max-width: 800px; */
+
+    }
+    &-box {
+      margin-bottom: 2rem;
+      /* border: 8px solid blue; */
+      color: currentColor;
+      border: 1px solid currentColor;
+      margin-top: 20px;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      &:before {
+        content: '';
+        height: 24px;
+        width: calc(100% + 2px);
+        position: absolute;
+        color: currentColor;
+        border: 1px solid currentColor;
+        left: -1px;
+        top: -24px;
+      }
+      &:hover {
+        mix-blend-mode: lighten;
+        .project__link {
+          display: block;
+        }
+      }
+      .project__link {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+      }
+      .dots {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        left: 9px;
+        top: -15px;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+        &:before {
+          position: absolute;
+          left: 11px;
+          top: -1px;
+          width: 6px;
+          height: 6px;
+          border: 1px solid currentcolor;
+          border-radius: 50%;
+          content: '';
+        }
+
+        &:after {
+          position: absolute;
+          left: 24px;
+          top: -1px;
+          width: 6px;
+          height: 6px;
+          border: 1px solid currentcolor;
+          border-radius: 50%;
+          content: '';
+        }
+      }
+    }
+    &-blend {
+      background-position: center center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+  }
+  &__info {
+    padding: 0.5rem 1.5rem;
+    margin-top: 2rem;
+    @media (min-width: $mid) {
+      margin-top: 0;
+      /* box-shadow: 10px 10px 0px 0 rgba(0,0,0,0.2); */
+    }
+    h4 {
+      padding-bottom: 0.5rem;
+    }
+    a {
+      border: 1px solid currentColor; 
+      border-radius: 14px;
+      padding: 4px 10px;
+      &:hover {
+        background-color: #FFCC19;
+        color: #FD4A1E;
+      }
+    }
+  }
+  &__flex {
+    @media (min-width: $mid) {
+      flex-direction: row-reverse;
+      margin-top: 2rem;
+      .project__info {
+        width: 30%;
+        margin-right: 10px;
+        /* margin-right: 4%; */
+      }
+      
+      .project__images {
+        width: 66%;
+      }
+    }
+  }
+}
+
+.projects--single {
+  &_image {
+    position: relative;
+    height: 0;
+    padding-bottom: 56%;
+    margin-bottom: 10px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-position: center center;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.footer {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  &__block {
+    @media (min-width: 800px) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+  &__inner {
+    max-width: 522px;
+  }
+  &__links {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    li {
+      margin: 0;
+      padding: 0;
+      width: 50%;
+    }
+  }
+  .newsletter {
+    border-top: 1px solid black;
+    @media (min-width: 800px) {
+      border-top: 0;
+    }
+    input {
+      border: none;
+      color: currentColor;
+      width: 100%;
+      margin-top: 20px;
+      border-bottom: 1px solid currentColor;
+    }
+    button {
+      border: 1px solid currentColor;
+      color: currentColor;
+      font-size: 17px;
+      padding: 0.8rem 2rem 0.6rem;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--white);
+      }
+    }
+    @media (min-width: 800px) {
+      border-left: 1px solid black;
+    }
+  }
+  &__logo {
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__illy {
+    @media (min-width: 800px) {
+      max-width: 420px;
+    }
+  }
+}

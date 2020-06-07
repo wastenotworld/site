@@ -1,0 +1,65 @@
+.toggle {
+  &__colors {
+    &-close {
+      top: 10px;
+      right: 10px;
+      border: 1px solid currentColor;
+      padding: 0.3rem;
+      background-color: transparent;
+      border-radius: 50%;
+      cursor: pointer;
+      svg {
+        width: 14px;
+        height: auto;
+        position: relative;
+        top: 1px;
+      }
+    }
+    &-open {
+      min-width: 200px;
+      display: none;
+      top: 34px;
+      span {
+        display: block;
+        min-width: 60px;
+      }
+      &.show {
+        display: block;
+      }
+      padding: 0.5rem 1rem;
+      background-color: currentColor;
+      border-radius: 20px;
+      input {
+        border: none;
+        color: currentColor;
+        border-bottom: 1px solid currentColor;
+        max-width: 62px;
+      }
+    }
+    button {
+      position: relative;
+      top: 2px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      border: 1px solid currentColor;
+      background-color: transparent;
+      border-radius: 50%;
+      &.active, &:hover {
+        background-color: currentColor;
+      }
+      &:focus {
+        outline: none;
+        &:before {
+          content: '';
+          width: calc(100% + 8px);
+          height: calc(100% + 6px);
+          position: absolute;
+          top: -3px;
+          left: -4px;
+          border: 2px dashed #DA5E50;
+        }
+      }
+    }
+  }
+}

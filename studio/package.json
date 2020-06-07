@@ -1,0 +1,35 @@
+{
+  "name": "spaghetti",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Kevin Green <kevin@thecouch.nyc>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "test": "sanity check",
+    "deploy": "sanity deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^1.149.10",
+    "@sanity/color-input": "^1.149.7",
+    "@sanity/components": "^1.149.10",
+    "@sanity/core": "^1.149.12",
+    "@sanity/default-layout": "^1.149.10",
+    "@sanity/default-login": "^1.149.11",
+    "@sanity/desk-tool": "^1.149.10",
+    "@sanity/vision": "^1.149.0",
+    "a11y-react-emoji": "^1.1.2",
+    "prop-types": "^15.6",
+    "react": "^16.2",
+    "react-dom": "^16.2",
+    "sanity-plugin-media": "^0.2.10",
+    "sanity-plugin-tabs": "^1.1.8",
+    "sanity-plugin-vision": "^2.0.7"
+  },
+  "devDependencies": {}
+}

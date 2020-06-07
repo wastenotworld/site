@@ -1,0 +1,19 @@
+---
+permalink: search.json
+---
+[
+{%- for user in users -%}
+  {
+    "url": "/users/{{ user.content.main.slug.current | slug }}/",
+    "type": "user",
+    "title": "{{ user.content.main.name  }}",
+  },
+{%- endfor -%}
+{%- for project in projects -%}
+  {
+    "url": "/websites/{{ project.content.main.slug.current | slug }}/",
+    "type": "website",
+    "title": "{{ project.content.main.name  }}",
+  }{% if not loop.last %},{% endif %}
+{%- endfor -%}
+]

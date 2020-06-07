@@ -1,0 +1,9 @@
+.ba {
+  /* border: 8px solid blue; */
+  transition: all 0.3s ease-in-out;
+  border: 1px solid currentColor;
+}
+
+.bb {
+  border-bottom: 1px solid black;
+}

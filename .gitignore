@@ -1,0 +1,15 @@
+# Mac files
+.DS_Store
+
+# Dependency directories
+/node_modules
+/studio/node_modules
+/site/node_modules
+
+# Ignore hidden files as default
+*.env
+.prettierrc
+
+/site/dist
+# Local Netlify folder
+.netlify

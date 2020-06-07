@@ -1,0 +1,21 @@
+.header {
+  width: calc(100vw);
+  border-bottom: 1px solid black;
+  height: 64px;
+  &__logo {
+    max-width: 226px;
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__nav {
+    list-style-type: none;
+  }
+  &__inner {
+    @media (min-width: 800px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<footer class='f jcb fw rel aic alt js-alt mt1 bcw footer'>
+  <div class='x c50'>
+    <div class='x px15 bb footer__block footer__logo'>
+      <div class='footer__inner mxa'>
+        {% include 'logo.njk' %}
+      </div>
+    </div>
+    <div class='al px15 bb footer__block'>
+      <div class='footer__inner mxa'>
+        <span class='caps'>WN V1.0 {{ site.buildTime | dateDisplay('LLL d, yyyy - HH:mm') }}</span>
+        <p class='s28'>
+          Waste Not is a free website. You're currently experiencing <a href=''>Version 1.0</a>
+        </p>
+        <a href='' class='button caps'>Versioning &amp; How to Support</a>
+      </div>
+    </div>
+    <div class='p15 al footer__block'>
+      <div class='footer__inner mxa'>
+        <ul class='footer__links m0 p0 f fw jcb'>
+          <li><a class='s28 mb05' href='mailto:help@site.com'>Get in Touch</a></li>
+          <li><a class='s28 mb05' href=''>Instagram</a></li>
+          <li><a class='s28 mb05' href=''>Guidelines</a></li>
+          <li><a class='s28 mb05' href=''>Twitter</a></li>
+          <li><a class='s28 ' href=''>Crdits</a></li>
+          <li><a class='s28 ' href=''>Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class='ac c50 p15 newsletter' data-component="form">
+    <div class='footer__inner py1 mxa'>
+      <img class='x footer__illy mxa' src='images/trashcan-illustration.png' alt='trashcan newsletter' />
+      <span class='s28 mt1 block pt05'>Subscribe to the <span class='cg'>Trash Talk</span> newsletter</span>
+      <p class=''>Not junk mail; Just profiles on suppliers, materials, innovators and more.</p>
+      <form class="newsletter__form rel">
+        <input required class=" x py1 container--s" type="email" name="email" placeholder='Your Email' />
+        <button type="submit" class="caps bcp abs bold bottom right">
+          <span>Submit</span>
+        </button>
+      </form>
+      <div class='h3 hidden js-spaghetti' style='margin-top: 1.5rem;'>
+        Got it!
+      </div>
+    </div>
+  </div>
+</footer>

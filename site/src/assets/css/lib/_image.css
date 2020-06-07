@@ -1,0 +1,36 @@
+.projects--single_image {
+  background-color:    #fecb37;
+  overflow:            hidden;
+  position:            relative;
+}
+
+.projects--single_image img {
+  transition: all 0.3s ease-in-out;
+  filter:              grayscale(100%) contrast(1);
+  height:              100%;
+  max-width:           100%;
+  mix-blend-mode:      multiply;
+  object-fit:          cover;
+  position:            relative;
+  width:               100%;
+}
+
+.projects--single_image::before {
+  /* background-color:    #fb4c2c; */
+  bottom:              0;
+  content:             '';
+  height:              100%;
+  left:                0;
+  mix-blend-mode:      lighten;
+  position:            absolute;
+  right:               0;
+  top:                 0;
+  width:               100%;
+  z-index:             1;
+}
+
+.projects--single_image:hover {
+  img {
+    mix-blend-mode: normal;
+  }
+}

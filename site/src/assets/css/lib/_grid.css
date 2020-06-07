@@ -1,0 +1,6 @@
+
+.c50 {
+  @media (min-width: 800px) {
+    width: calc(50%);
+  }
+}

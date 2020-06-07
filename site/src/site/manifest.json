@@ -1,0 +1,25 @@
+{
+  "name": "Spaghetti Directory",
+  "short_name": "spaghetti.directory",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/iconLarge.png",
+      "sizes": "640x640",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ec407a",
+  "background_color": "#ec407a",
+  "display": "standalone",
+  "start_url": "/"
+}

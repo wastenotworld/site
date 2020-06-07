@@ -26,6 +26,11 @@
         height: calc(100% + 2px);
         top: -1px;
         right: -1px;
+        span {
+          position: relative;
+          top: 2px;
+          left: 7px;
+        }
       }
     }
     &-title {

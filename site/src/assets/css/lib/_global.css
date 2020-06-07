@@ -38,3 +38,7 @@ body, html {
   display: none;
 }
 
+.obj-fit {
+  object-fit: cover;
+  object-position: center center;
+}

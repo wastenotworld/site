@@ -58,6 +58,7 @@ h1 {
   line-height: 1.2;
   @media (min-width: 800px) {
     font-size: 80px;
+    line-height: 0.9;
   }
 }
 

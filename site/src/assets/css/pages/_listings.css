@@ -1,0 +1,68 @@
+.listings {
+  &__index {
+    @media screen and (min-width: 800px) {
+      padding: 2rem;
+    }
+    @media (min-width: 100px) {
+      padding: 3rem 2rem 4rem;
+    }
+  }
+  &__block {
+    @media screen and (min-width: 800px) {
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+      width: calc(100% - 330px);
+    }
+  }
+  &__links {
+    background-color: var(--litegreen);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    transition: all 0.3s ease-in-out;
+    &:nth-of-type(odd) {
+      background-color: var(--blue);
+    }
+    &-arrow {
+      display: none;
+      @media (min-width: 800px) {
+        display: inline-block;
+      }
+    }
+    span {
+      &:first-child {
+        width: 40%;
+      }
+    }
+    &:hover {
+      color: white;
+    }
+  }
+  &__world {
+    max-width: 480px;
+    &-image {
+      width: 90px;
+      height: auto;
+      @media (min-width: 800px) {
+        position: absolute;
+        width: 200px;
+        top: 150px;
+        right: 0;
+      }
+      @media (min-width: 1100px) {
+        right: -50px;
+        top: 140px;
+      }
+    }
+    @media (min-width: 800px) {
+      width: 270px;
+      &-text {
+        text-align: center;
+        background-color: var(--white);
+        border: 1px solid black;
+        padding: 0 1rem;
+        width: 250px;
+      }
+    }
+  }
+}

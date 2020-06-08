@@ -1,9 +1,9 @@
 <div class='listing__card mb1 bcw rel'>
   <div class='listing__card-header f fw jcb rel aic bb'>
-    <div class='p05 x listing__card-title '>
-      <a class='s28' href='/listings/{{ listing.content.main.slug.current | slug }}/'>{{ listing.content.main.name  }}</a>
+    <div class='p05 x al listing__card-title '>
+      <a class='s28' href='/listing/{{ listing.content.main.slug.current | slug }}/'>{{ listing.content.main.name  }}</a>
     </div>
-    <div class='p1 caps al s13 f jcs aic listing__card-country' style="background-color: {{listing.content.main.origin.color.hex}}">
+    <div class='py05 caps al s13 bt x f jcs aic listing__card-country' style="background-color: {{listing.content.main.origin.color.hex}}">
       <span>
         Origin {{listing.content.main.origin.title}}
       </span>

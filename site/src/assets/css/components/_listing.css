@@ -17,6 +17,7 @@
     margin-left: auto;
     margin-right: auto;
     &-country {
+      padding-left: 1rem;
       @media (min-width: 700px) {
         width: 200px;
         border: 1px solid black;
@@ -34,7 +35,7 @@
       }
     }
     &-title {
-      padding: 0.4rem 1rem;
+      padding: 0.7rem 1rem 0.4rem;
       @media (min-width: 700px) {
         width: auto;
         padding-left: 20px;

@@ -23,7 +23,7 @@
     }
     &-disc {
       margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       @media (min-width: 1100px) {
         display: flex;
         svg {

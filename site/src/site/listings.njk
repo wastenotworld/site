@@ -1,0 +1,35 @@
+---
+title: Listings
+layout: layouts/base.njk
+---
+
+<div class='listings__index '>
+  <div class='container--xl x mxa f jcb aic fw'>
+    <div class='x al listings__block mxa'>
+      {% for parent in parents %}
+        <div class='listings__index-header px1 py05 bcw bb'>
+          <span class='block bold s16'>
+            {{parent.parent}}
+          </span>
+        </div>
+        {% for listing in parent.listings %}
+          <a href='' class='f jcb aic listings__links bb px1 py05'>
+            <span class='s28'>{{listing.content.main.name}}</span>
+            <span class='s12 caps'>{{listing.total}} Listings</span>
+            <span class='listing__links-arrow'>
+              <svg width="19" height="14" viewBox="0 0 19 14" fill="none">
+                <path d="M18.7383 7.46384C18.7383 7.31293 18.668 7.18968 18.5847 7.1092L12.3386 1.07289C12.1825 0.91444 11.9665 0.88929 11.7739 0.964744C11.5865 1.03768 11.4538 1.22884 11.4512 1.42502L11.4512 4.44317L0.520488 4.44317C0.24722 4.44317 -2.01209e-05 4.6821 -2.01452e-05 4.94619L-2.06095e-05 9.97645C-2.06339e-05 10.2405 0.247219 10.4795 0.520487 10.4795L11.4512 10.4795L11.4512 13.4976C11.4538 13.6938 11.5865 13.8824 11.7739 13.9579C11.9613 14.0334 12.1617 14.0132 12.3386 13.8497L18.5847 7.81345C18.6732 7.72542 18.7357 7.6072 18.7383 7.46384ZM17.4865 7.46384L12.4922 12.2878L12.4922 9.97645C12.4922 9.71236 12.2449 9.47342 11.9717 9.47342L1.041 9.47342L1.041 5.44922L11.9717 5.44922C12.2449 5.44922 12.4922 5.21028 12.4922 4.94619L12.4922 2.63479L17.4865 7.46384Z" fill="currentColor"/>
+              </svg>
+            </span>
+          </a>
+        {% endfor %}
+      {% endfor %}
+    </div>
+    <div class='listings__world mxa f jcb aic rel p1 al'>
+      <div class='listings__world-text'>
+        <p class='serif'>We’re a free website powered by x, y, and the community. Submissions and maintenance run on x. <a class='underline' href='/contribution-guidelines'>Learn more</a>.</p>
+      </div>
+      <img class='listings__world-image ml1' src='/images/world-illustration.png' alt='broken world illustration' />
+    </div>
+  </div>
+</div>

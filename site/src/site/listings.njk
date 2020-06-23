@@ -13,7 +13,7 @@ layout: layouts/base.njk
           </span>
         </div>
         {% for listing in parent.listings %}
-          <a href='' class='f jcb aic listings__links bb px1 py05'>
+          <a href='/category/{{listing.content.main.slug.current}}' class='f jcb aic listings__links bb px1 py05'>
             <span class='s28'>{{listing.content.main.name}}</span>
             <span class='s12 caps'>{{listing.total}} Listings</span>
             <span class='listing__links-arrow'>

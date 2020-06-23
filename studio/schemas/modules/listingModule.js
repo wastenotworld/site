@@ -73,6 +73,13 @@ export default {
       fieldset: 'filters'
     },
     {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [ {type: 'reference', to: { type: 'tag' } }],
+      fieldset: 'filters'
+    },
+    {
       name: 'image',
       type: 'image',
       title: 'Dithered Image',

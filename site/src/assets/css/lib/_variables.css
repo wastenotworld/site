@@ -27,6 +27,10 @@
   background-color: var(--litegreen);
 }
 
+.bcg {
+  background-color: var(--green);
+}
+
 .bcp {
   background-color: var(--purple);
 }

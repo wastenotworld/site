@@ -42,3 +42,15 @@ body, html {
   object-fit: cover;
   object-position: center center;
 }
+
+.arrow-helper {
+  &:after {
+    border-top: 5px solid black;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+  }
+}

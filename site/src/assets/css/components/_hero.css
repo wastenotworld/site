@@ -1,4 +1,5 @@
 .hero {
+  min-height: 600px;
   height: 100vh;
   max-height: 800px;
   &__image {
@@ -9,6 +10,12 @@
     padding-top: 80px;
     p {
       max-width: 660px;
+    }
+    @media (min-width: 800px) {
+      p {
+        margin-bottom: 3rem;
+      }
+      padding-top: 100px;
     }
   }
 }

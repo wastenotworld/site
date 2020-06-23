@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // Content Types
 import category from './types/category'
 import country from './types/country'
+import tag from './types/tags'
 import listing from './types/listing'
 import manufacturer from './types/manufacturer'
 
@@ -40,6 +41,7 @@ export default createSchema({
     listing,
     category,
     country,
+    tag,
     // Tabs
     categoryContent,
     manufacturerContent,

@@ -1,0 +1,33 @@
+.submit {
+  &__image {
+    padding: 4rem 2rem;
+    height: 100vw;
+    border-bottom: 1px solid black;
+    img {
+      object-position: bottom center;
+    }
+    @media (min-width: 900px) {
+      width: 50%;
+      max-width: 580px;
+      max-height: 800px;
+      position: sticky;
+      top: 60px;
+      bottom: 0;
+      border-bottom: none;
+      border-right: 1px solid black;
+    }
+    @media (min-width: 1100px) {
+      width: 580px;
+    }
+  }
+  &__text {
+    @media (min-width: 900px) {
+      width: 50%;
+      margin-bottom: 4rem;
+      margin-top: 4rem;
+    }
+    @media (min-width: 1100px) {
+      width: calc(100% - 600px);
+    }
+  }
+}

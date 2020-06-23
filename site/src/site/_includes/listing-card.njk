@@ -17,17 +17,17 @@
       <div class='serif'>
         {{listing.description}}
       </div>
-      <div class='mt1 sans listing__card-additional'>
-        <div class='listing__card-adds f jcs aie'>
-          <span class='s13c caps mr1 listing__card-add-tag'>QTYS</span> <span class='bold s14'>{% qtys listing.content.main.qtys %}</span>
+      <div class='mt1 sans listing__card-add-wrapper'>
+        <div class='listing__card-add f jcs ais'>
+          <span class='s13 caps mr1 listing__card-add-tag'>QTYS</span> <span class='bold s14'>{% qtys listing.content.main.qtys %}</span>
         </div>
-        <div class='listing__card-adds f jcs aie'>
-          <span class='s13c caps mr1 listing__card-add-tag'>City</span> <span class='bold s14'>{{ listing.content.main.location }}</span>
+        <div class='listing__card-add f jcs ais'>
+          <span class='s13 caps mr1 listing__card-add-tag'>City</span> <span class='bold s14'>{{ listing.content.main.location }}</span>
         </div>
-        <div class='listing__card-adds f jcs aie'>
-          <span class='s13c caps mr1 listing__card-add-tag'>Tags</span> <span class='bold s14'>
+        <div class='listing__card-add f jcs ais'>
+          <span class='s13 caps mr1 listing__card-add-tag'>Tags</span> <span class='bold s14'>
             {% for tag in listing.content.main.tags %}
-              {{tag | dump}}
+              {{tag.title}}{% if loop.index !== loop.length %},{% endif %}
             {% endfor %}
           </span>
         </div>

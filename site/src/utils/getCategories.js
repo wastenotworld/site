@@ -29,7 +29,8 @@ async function getCategories () {
           main {
             ...,
             'image': image.asset->,
-            origin->
+            origin->,
+            tags[]->
           }
         }
       }

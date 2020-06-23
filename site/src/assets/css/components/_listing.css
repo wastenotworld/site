@@ -35,6 +35,9 @@
       }
     }
     &-add {
+      &-wrapper {
+        margin-top: 1.6rem;
+      }
       &-tag {
         min-width: 60px;
       }

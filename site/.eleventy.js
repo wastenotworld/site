@@ -73,6 +73,37 @@ module.exports = function(config) {
       return minified.code;
   });
 
+  config.addNunjucksTag('qtys', (nunjucksEngine) => {
+    return new function() {
+      this.tags = ["qtys"];
+
+      this.parse = function(parser, nodes, lexer) {
+        var tok = parser.nextToken();
+
+        var args = parser.parseSignature(null, true);
+        parser.advanceAfterBlockEnd(tok.value);
+
+        return new nodes.CallExtensionAsync(this, "run", args);
+      };
+
+      this.run = function(context, myStringArg, callback) {
+        var ret
+        switch (myStringArg) {
+          case 'mixed':
+            ret = new nunjucksEngine.runtime.SafeString('Mixed miniumums')
+            break;
+          case 'high':
+            ret = new nunjucksEngine.runtime.SafeString('High miniumums')
+            break;
+          default:
+            ret = new nunjucksEngine.runtime.SafeString('Low Miniumums')
+            break;
+          
+        }
+        callback(null, ret);
+      };
+    }()
+  })
 
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");

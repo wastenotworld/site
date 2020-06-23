@@ -13,9 +13,24 @@
     <div class='listing__card-image x'>
       <img class='x block ba' src="{{listing.content.main.image.url}}" />
     </div>
-    <div class='listing__card-description serif s16 x'>
-      <div>
+    <div class='listing__card-description s16 x'>
+      <div class='serif'>
         {{listing.description}}
+      </div>
+      <div class='mt1 sans listing__card-additional'>
+        <div class='listing__card-adds f jcs aie'>
+          <span class='s13c caps mr1 listing__card-add-tag'>QTYS</span> <span class='bold s14'>{% qtys listing.content.main.qtys %}</span>
+        </div>
+        <div class='listing__card-adds f jcs aie'>
+          <span class='s13c caps mr1 listing__card-add-tag'>City</span> <span class='bold s14'>{{ listing.content.main.location }}</span>
+        </div>
+        <div class='listing__card-adds f jcs aie'>
+          <span class='s13c caps mr1 listing__card-add-tag'>Tags</span> <span class='bold s14'>
+            {% for tag in listing.content.main.tags %}
+              {{tag | dump}}
+            {% endfor %}
+          </span>
+        </div>
       </div>
     </div>
     <div class='listing__card-tags x'>

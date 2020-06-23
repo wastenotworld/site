@@ -1,7 +1,7 @@
 {
-  "name": "spaghetti",
+  "name": "wastenot",
   "version": "1.0.0",
-  "description": "spaghetti directory",
+  "description": "Waste Not Website",
   "author": "Kevin Green",
   "license": "MIT",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/eleventyone"
+    "url": "https://github.com/wastenotworld/site"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",

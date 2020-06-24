@@ -6,8 +6,67 @@
     }
   }
   &__expand {
-    @media (min-width: 700px) {
-      padding-right: 20px;
+    display: none;
+    .open & {
+      display: flex;
+    }
+    &-open {
+      .open & {
+        display: none;
+      }
+      @media (min-width: 700px) {
+        padding-right: 20px;
+      }
+    }
+    @media (min-width: 800px) {
+      flex-wrap: nowrap;
+      border-top: 1px solid black;
+    }
+    &-name {
+      border-bottom: 1px solid black;
+      padding-bottom: 14px;
+      &-l {
+        display: block;
+        @media (min-width: 800px) {
+          display: inline;
+        }
+      }
+      @media (min-width: 800px) {
+        width: 40%;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+    &-source {
+      @media (min-width: 800px) {
+        position: absolute;
+        right: 14px;
+        bottom: 68px;
+      }
+    }
+    &-link {
+      width: 50%;
+      border-right: 1px solid black;
+      @media (min-width: 800px) {
+        width: 30%;
+        border-left: 1px solid black;
+      }
+    }
+    &-share {
+      width: 30%;
+      border-right: 1px solid black;
+      @media (min-width: 800px) {
+        width: 18%;
+      }
+    }
+    &-a {
+      padding: 1.4rem;
+    }
+    &-close {
+      width: 20%;
+      @media (min-width: 800px) {
+        width: 10%;
+      }
     }
   }
   &__card {
@@ -16,6 +75,7 @@
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
     &-country {
       padding-left: 1rem;
       @media (min-width: 700px) {
@@ -41,6 +101,12 @@
       &-tag {
         min-width: 60px;
       }
+      &.hide-open {
+        display: none;
+        .open & {
+          display: flex;
+        }
+      }
     }
     &-title {
       padding: 0.7rem 1rem 0.4rem;
@@ -51,7 +117,9 @@
     }
     &-description {
       order: 2;
+      margin-top: 8px;
       @media (min-width: 700px) {
+        margin-top: 0;
         width: calc(50%);
         max-width: 460px;
         margin-left: 14px;
@@ -98,6 +166,9 @@
 
       @media (min-width: 700px) {
         max-width: 250px;
+        .open & {
+          max-width: 340px;
+        }
       }
     }
   }

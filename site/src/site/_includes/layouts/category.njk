@@ -19,11 +19,11 @@ renderData:
 
 <div class='f category__content fw jcb ais container--xl mxa'> 
   <div class='x category__filters'>
-    <div class='category__filters-inner x al bcw ba'>
+    <div class='category__filters-inner x p1 al bcw ba'>
       <span class='s18'>Filter</span>
     </div>
   </div>
-  <div class='mt1 category__list'>
+  <div class='mt1 category__list p1'>
     {% for listing in category.content.listings %}
       {% include 'listing-card.njk' %}
     {% endfor %}

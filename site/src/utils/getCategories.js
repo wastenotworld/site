@@ -32,9 +32,13 @@ async function getCategories () {
             origin->,
             tags[]->
           }
+        },
+        'supplier': *[_type =='manufacturer' && references(^._id)] [0] {
+          content,
+          _id
         }
       }
-    }
+    },
   }`
   const docs = await client.fetch(filter).catch(err => console.error(err))
   const categories = docs.map(generateCategory)

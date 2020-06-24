@@ -48,4 +48,30 @@
       </svg>
     </button>
   </div>
+  <div class='listing__expanded f fw jcb aist'>
+    <div class='listing__expanded-name x f jcb aic px1'>
+      <div>
+        {% if listing.supplier %}
+          <span class='s14'>{{listing.supplier.content.main.name}}</span>
+          <span><a class='cg' href='/manufacturer/{{listing.supplier.content.main.slug.current}}'>{{listing.supplier.content.main.listings.length}} listings</span>
+        {% endif %}
+      </div>
+      <div>
+        {% include 'opensource.njk'  %}
+      </div>
+    </div>
+    <div>
+      <a href=''>Visit Website</a>
+    </div>
+    <div>
+      <a href=''>Share</a>
+    </div>
+    <div class='px1'>
+      <button class='naked'>
+        <svg class='block' width="22" height="22" viewBox="0 0 22 22" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1662 1.79601C19.306 1.65617 19.2619 1.53104 19.0632 1.53104L12.9762 1.45008C12.0047 1.43536 11.99 -0.0146092 12.9541 0.000111329L20.9915 0.0516331C21.5068 0.0516331 21.9189 0.471167 21.9263 0.979024L21.9999 9.04585C22.0146 10.01 20.5646 9.99533 20.5499 9.02377L20.469 2.93685C20.469 2.73076 20.3438 2.6866 20.204 2.83381L2.83381 20.204C2.6866 20.3512 2.73076 20.469 2.93685 20.469L9.02377 20.5499C9.98797 20.5646 10.01 22.0146 9.04585 21.9999L1.00847 21.941C0.493248 21.941 0.081074 21.5215 0.0737138 21.0136L0.000111329 12.9541C-0.0146092 11.99 1.43536 12.0047 1.45008 12.9762L1.53104 19.0632C1.53104 19.2692 1.65617 19.3134 1.79601 19.1662L19.1662 1.79601Z" fill="black"/>
+        </svg>
+      </button>
+    </div>
+  </div>
 </div>

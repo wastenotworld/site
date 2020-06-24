@@ -5,7 +5,6 @@ const serializers = require('./serializers')
 const { uniqBy } = require('lodash')
 
 function generateListing (listing) {
-  console.log(listing.content.main.tags)
   return {
     ...listing,
     description: BlocksToMarkdown(listing.content.main.description, { serializers, ...client.config() })
@@ -26,6 +25,10 @@ async function getListings () {
           title
         }
       }
+    },
+    'supplier': *[_type =='manufacturer' && references(^._id)] [0] {
+      content,
+      _id
     }
   }`
   const docs = await client.fetch(filter).catch(err => console.error(err))

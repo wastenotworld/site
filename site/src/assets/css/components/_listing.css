@@ -105,6 +105,9 @@
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+    @media (min-width: 1000px) {
+      max-width: 940px;
+    }
     &-country {
       padding-left: 1rem;
       @media (min-width: 700px) {

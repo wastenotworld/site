@@ -18,9 +18,9 @@ module.exports = function(config) {
   config.addPassthroughCopy("./src/site/manifest.json");
 
   // service workers
-  // if (env !== 'dev') {
-  //   config.addPlugin(pluginPWA);
-  // }
+  if (env !== 'dev') {
+    config.addPlugin(pluginPWA);
+  }
 
   // Add some utility filters
   config.addFilter("squash", require("./src/utils/filters/squash.js") );

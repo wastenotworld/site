@@ -174,7 +174,7 @@
         .open.source & {
           width: 58%;
           flex-wrap: wrap;
-          min-height: 600px;
+          min-height: 570px;
         }
       }
     }

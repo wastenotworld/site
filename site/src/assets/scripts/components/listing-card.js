@@ -6,4 +6,7 @@ export default component((node) => {
   expanders.forEach(expand => {
     expand.addEventListener('click', () => node.classList.toggle('open'))
   })
+
+  const sourceOpen = node.querySelector('.js-source-open')
+  sourceOpen.addEventListener('click', () => node.classList.toggle('source'))
 })

@@ -1,6 +1,6 @@
 .category {
   &__header {
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
       &:before {
         left: 0;
         width: 30%;
@@ -20,7 +20,7 @@
     }
     &-browse {
       display: none;
-      @media (min-width: 900px) {
+      @media (min-width: 1000px) {
         display: flex;
         padding-left: 2rem;
         width: 30%;
@@ -32,7 +32,7 @@
       }
     }
     &-links {
-      @media (min-width: 900px) {
+      @media (min-width: 1000px) {
         padding: 1rem;
         width: 70%;
         padding-left: 2rem;
@@ -45,7 +45,7 @@
     }
   }
   &__filters {
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
       width: calc(30% - 30px);
       margin-top: 1rem;
       &-inner {
@@ -55,12 +55,12 @@
   }
 
   &__list {
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
       width: 70%;
     }
   }
   &__content {
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
       padding: 3rem 1.5rem;
     }
   }

@@ -5,6 +5,28 @@
       padding: 5.2rem 0 5rem;
     }
   }
+  &__source {
+    &-mobile {
+      display: none;
+    }
+    &-desktop {
+      order: 4;
+      right: 14px;
+      top: 55px;
+      max-width: 40%;
+      display: none;
+      border: 1px solid black;
+      border-top: none;
+      overflow: hidden;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    &-ticket {
+      > div {
+        margin-top: -3px;
+      }
+    }
+  }
   &__expand {
     display: none;
     .open & {
@@ -38,10 +60,17 @@
       }
     }
     &-source {
+      border: none;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        svg {
+          fill: white;
+        }
+      }
       @media (min-width: 800px) {
         position: absolute;
         right: 14px;
-        bottom: 68px;
+        top: -80px;
       }
     }
     &-link {
@@ -72,7 +101,7 @@
   &__card {
     border: 1px solid black;
     border-radius: 20px;
-    max-width: 940px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -128,11 +157,25 @@
           max-width: 340px;
         }
       }
+      @media (min-width: 800px) {
+        .open.source & {
+          order: 4;
+          width: 64%;
+          margin: 10px 0;
+        }
+      }
     }
     &-content {
       @media (min-width: 700px) {
         flex-wrap: nowrap;
         padding: 20px;
+      }
+      @media (min-width: 800px) {
+        .open.source & {
+          width: 58%;
+          flex-wrap: wrap;
+          min-height: 600px;
+        }
       }
     }
     &-tags {
@@ -169,7 +212,30 @@
         .open & {
           max-width: 340px;
         }
+        .open.source & {
+          width: 64%;
+        }
       }
+    }
+  }
+}
+
+.listing__card.source {
+  .listing__source-mobile {
+    display: block;
+    @media (min-width: 800px) {
+      display: none;
+    }
+  }
+  .source-open-hide {
+    display: none;
+    @media (min-width: 800px) {
+      display: flex;
+    }
+  }
+  .listing__source-desktop {
+    @media (min-width: 800px) {
+      display: block;
     }
   }
 }

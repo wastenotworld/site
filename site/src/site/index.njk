@@ -13,11 +13,13 @@ pagination:
       <h1 class='cg'>Sustainability. Searchability.</h1>
       <p class='s30 serif container--m mxa'> Waste Not is a simple way to search an open-source database of sustainable suppliers. Find better:</p>
       <select name="navigation" id="navigationalDrop" data-component='easy'>
-        <option value="">Search Materials</option>
+        <option data-placeholder='true'></option>
         {% for parent in parents %}
           <option value='{{parent.parent}}' disabled>{{parent.parent}}</option>
           {% for listing in parent.listings %}
-            <option value='/category/{{listing.content.main.slug.current}}'>{{listing.content.main.name}}</option>
+            <option class='dropdown-filters' value='/category/{{listing.content.main.slug.current}}'>
+              {{listing.content.main.name}}
+            </option>
           {% endfor %}
         {% endfor %}
       </select>

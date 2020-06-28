@@ -36,10 +36,6 @@
     background: #F7F5EE;
 }
 
-.edd-head,
-.edd-body {
-    border-radius: 8px;
-}
 
 .edd-root-focused .edd-head {
     box-shadow: 0 0 5px rgba(105, 215, 255, 0.4);
@@ -119,16 +115,20 @@
 .edd-body {
     opacity: 0;
     position: absolute;
-    left: 0;
+    left: -15px;
     right: 0;
-    border: 1px solid #eee;
+    border: 1px solid #000;
+    width: calc(100% + 24px);
     pointer-events: none;
     overflow: hidden;
-    margin: 8px 0;
+    margin: 0px 0;
     z-index: 999;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transform: scale(0.95);
     background: white;
+    .hero & {
+        width: 100%;
+        left: 0;
+    }
 }
 
 .edd-root-open .edd-body {
@@ -167,7 +167,17 @@
 }
 
 .edd-option {
-    padding: 4px 8px;
+    padding: 6px 30px;
+    border-bottom: 1px solid black;
+    &:last-child {
+        border-bottom: 0;
+    }
+    &:not(.edd-option-disabled)  {
+        background-color:var(--litegreen);
+        &:nth-child(odd) {
+            background-color: var(--blue);
+        }
+    }
 }
 
 .edd-group-has-label .edd-option {
@@ -175,17 +185,20 @@
 }
 
 .edd-option-selected {
+    display: none;
     font-weight: bold;
 }
 
 .edd-option-focused:not(.edd-option-disabled) {
-    color: #4ac5f1;
+    /* color: #4ac5f1; */
 }
 
 .edd-option-disabled,
 .edd-group-disabled .edd-option {
     cursor: default;
-    color: #ccc;
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
 }
 
 .edd-gradient-top,
@@ -228,4 +241,10 @@
 .edd-body-scrollable.edd-body-at-top .edd-gradient-top,
 .edd-body-scrollable.edd-body-at-bottom .edd-gradient-bottom {
     opacity: 0;
+}
+
+.category__header {
+    .edd-option-selected {
+        display: none;
+    }
 }

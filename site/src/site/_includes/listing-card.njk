@@ -1,4 +1,4 @@
-<div class='listing__card mb1 bcw rel {{open}}' data-component='listingCard'>
+<div class='listing__card mb1 bcw rel {{open}} {% for material in listing.content.main.material %}{{material}} {% endfor %}' data-component='listingCard'>
   <div class='listing__card-header f fw jcb rel aic bb'>
     <div class='p05 x al listing__card-title '>
       <a class='s28' href='/listing/{{ listing.content.main.slug.current | slug }}/'>{{ listing.content.main.name  }}</a>

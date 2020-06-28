@@ -13,12 +13,14 @@ renderData:
     </div>
     <div class='category__header-links z1 arrow-helper x al rel px1'>
       {# <span class='block s28'>{{category.content.main.name}}</span> #}
-      <select name="navigation" id="navigationalDrop" data-component='easy'>
-        <option value="">Search Materials</option>
+      <select name="navigation" id="navigationalDrop" data-component='easy' data-placeholder="{{category.content.main.name}}">
+        <option data-placeholder='true'></option>
         {% for parent in parents %}
-          <option value='{{parent.parent}}' disabled>{{parent.parent}}</option>
+          <option class='dropdown--hidden' value='{{parent.parent}}' disabled>{{parent.parent}}</option>
           {% for listing in parent.listings %}
-            <option value='/category/{{listing.content.main.slug.current}}'>{{listing.content.main.name}}</option>
+            <option value='/category/{{listing.content.main.slug.current}}'>
+              <span>{{listing.content.main.name}}</span>
+            </option>
           {% endfor %}
         {% endfor %}
       </select>
@@ -27,16 +29,11 @@ renderData:
 </div>
 
 <div class='f category__content fw jcb ais container--xl mxa'> 
-  <div class='x category__filters'>
-    <div class='category__filters-inner x p1 al bcw ba'>
-      <span class='s18'>Filter</span>
-    </div>
-  </div>
+  {% include 'filters.njk' %}
   <div class='mt1 category__list x p1'>
     {% for listing in category.content.listings %}
       {% include 'listing-card.njk' %}
-    {% endfor %}
-    {% if listing | length == 0 %}
+    {% else %}
       <div class='rel category__empty'>
         <div class='bcw category__empty-text p1 ba mxa'>
           <p class='bold'>Oops! We're getting there.</p>
@@ -45,6 +42,6 @@ renderData:
         </div>
         <img class='x category__empty-image mxa' src='/images/bottle-straw.webp' alt='trashcan newsletter' />
       </div>
-    {% endif %}
+    {% endfor %}
   </div>
 </div>

@@ -90,6 +90,9 @@
       max-width: 540px;
       position: relative;
       top: -80px;
+      @media (min-width: 800px) {
+        top: -120px;
+      }
     }
   }
 }

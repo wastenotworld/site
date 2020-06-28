@@ -18,7 +18,7 @@ renderData:
         {% for parent in parents %}
           <option class='dropdown--hidden' value='{{parent.parent}}' disabled>{{parent.parent}}</option>
           {% for listing in parent.listings %}
-            <option value='/category/{{listing.content.main.slug.current}}'>
+            <option class='dropdown-filters' value='/category/{{listing.content.main.slug.current}}'>
               <span>{{listing.content.main.name}}</span>
             </option>
           {% endfor %}

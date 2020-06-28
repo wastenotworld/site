@@ -37,6 +37,7 @@ export default component((node) => {
     placeholder: placeholder ? placeholder : 'Search Materials',
     onChange: (info) => {
       console.log(info)
+      router.go(info.value)
     }
   })
 })

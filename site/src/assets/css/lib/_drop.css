@@ -1,0 +1,47 @@
+.ss-main .ss-single-selected {
+  max-width: 560px;
+  padding: 1.2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  /* margin: 0 auto; */
+  font-size: 20px;
+  height: auto;
+  min-height: 70px;
+  .category__header-links & {
+    max-width: 100%;
+    border: 0;
+    background-color: transparent;
+  }
+  .hero & {
+    margin: 0 auto;
+  }
+}
+
+.ss-option {
+  border-bottom: 1px solid black;
+}
+
+.ss-list {
+  border: 1px solid black;
+  border-top: none;
+}
+
+.hero .ss-main {
+  max-width: 560px;
+}
+
+.ss-content {
+  .ss-list {
+    @media (min-width: 800px) {
+      max-height: 340px;
+    }
+  }
+  .dropdown-filters {
+    font-size: 22px;
+    padding: 1rem;
+    background-color:var(--litegreen);
+    &:nth-of-type(odd) {
+      background-color: var(--blue);
+    }
+  }
+}

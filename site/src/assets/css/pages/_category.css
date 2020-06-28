@@ -33,13 +33,27 @@
     }
     &-links {
       @media (min-width: 1000px) {
-        padding: 1rem;
+        /* padding: 1rem; */
         width: 70%;
-        padding-left: 2rem;
+        /* padding-left: 2rem; */
         background-color: var(--litegreen);
         span {
           position: relative;
           top: 2px;
+        }
+        .edd-root {
+          max-width: 100%;
+          display: block;
+        }
+        .edd-head {
+          background-color: transparent;
+          border: none;
+        }
+        .edd-value {
+          border-right: none;
+        }
+        .edd-arrow {
+          display: none;
         }
       }
     }
@@ -62,6 +76,20 @@
   &__content {
     @media (min-width: 1000px) {
       padding: 3rem 1.5rem;
+    }
+  }
+  &__empty {
+    &-text {
+      max-width: 400px;
+      padding: 2rem 1rem;
+      a {
+        margin-top: 14px;
+      }
+    }
+    &-image {
+      max-width: 540px;
+      position: relative;
+      top: -80px;
     }
   }
 }

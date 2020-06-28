@@ -3,7 +3,7 @@ import operator from 'operator'
 
 import '/css/styles.css';
 
-const router = operator('#root')
+export const router = operator('#root')
 
 document.addEventListener('DOMContentLoaded', e => {
   console.log('🍝 Built by Kevin Green');

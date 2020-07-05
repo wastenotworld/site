@@ -5,11 +5,11 @@ import { router } from '../index.js'
 
 export default component((node) => {
   new SlimSelect({
-    select: '#navigationalDrop',
+    select: '#multiple',
     showSearch: false,
+    placeholder: 'Anywhere',
     onChange: (info) => {
       console.log(info)
-      router.go(info.value)
     }
   })
 })

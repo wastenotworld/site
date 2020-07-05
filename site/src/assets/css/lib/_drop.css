@@ -19,6 +19,9 @@
 
 .ss-option {
   border-bottom: 1px solid black;
+  &:last-child {
+    border-bottom: 0;
+  }
 }
 
 .ss-list {
@@ -26,14 +29,24 @@
   border-top: none;
 }
 
+.ss-arrow {
+  display: none !important;
+}
+
 .hero .ss-main {
   max-width: 560px;
 }
 
 .ss-content {
+  border: 0;
   .ss-list {
     @media (min-width: 800px) {
       max-height: 340px;
+      .category__header-links & {
+        width: calc(100% + 30px);
+        left: -15px;
+        position: relative;
+      }
     }
   }
   .dropdown-filters {

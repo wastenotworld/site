@@ -1,0 +1,51 @@
+.category__filters {
+  &-group {
+    fieldset {
+      border: none;
+    }
+    input {
+      appearance: none;
+      margin-right: 1rem;
+      position: relative;
+      outline: red;
+      width: 10px;
+      height: 10px;
+      border: none;
+      &:focus + label {
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: -1px;
+          width: calc(100% + 2px);
+          height: calc(100% + 2px);
+          border: 2px dashed var(--green);
+        }
+      }
+      &:after {
+        border: 1px solid black;
+        z-index: 5;
+        width: 8px;
+        height: 8px;
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        top: 0px;
+        left: 5px;
+      }
+      &:checked {
+        &:before {
+          width: 8px;
+          height: 8px;
+          left: 5px;
+          top: 0px;
+          border-radius: 50%;
+          background-color: red;
+          position: absolute;
+          content: '';
+        }
+      }
+    }
+  }
+}

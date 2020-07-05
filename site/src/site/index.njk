@@ -21,8 +21,9 @@ pagination:
               {{listing.content.main.name}}
             </option>
           {% endfor %}
-
-          <option class='hidden'></option>
+          {% if loop.last != true %}
+            <option class='hidden'></option>
+          {% endif %}
         {% endfor %}
       </select>
     </div>

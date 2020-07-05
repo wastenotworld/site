@@ -1,33 +1,65 @@
 <div class='x category__filters'>
-  <div class='category__filters-inner x p1 al bcw ba'>
+  <div class='category__filters-inner x p1 al bcw '>
     <span class='s18'>Filter</span>
     <div class='category__filters-group al mt1'>
-      <fieldset>
-        <div>
-          <input type="checkbox" id="biodegredable" name="biodegredable">
-          <label for="biodegredable">Biodegredable</label>
-        </div>
-        <div>
-          <input type="checkbox" id="compostable" name="compostable">
-          <label for="compostable">Compostable</label>
-        </div>
-        <div>
-          <input type="checkbox" id="home-compostable" name="home-compostable">
-          <label for="home-compostable">Home Compostable</label>
-        </div>
-        <div>
-          <input type="checkbox" id="renewed-material" name="renewed-material">
-          <label for="renewed-material">Renewed Material</label>
-        </div>
-        <div>
-          <input type="checkbox" id="bio-based" name="bio-based">
-          <label for="bio-based">Bio Based</label>
-        </div>
-        <div>
-          <input type="checkbox" id="bio-based" name="bio-based">
-          <label for="bio-based">Bio Based</label>
-        </div>
-      </fieldset>
+      <div>
+        <input type="checkbox" id="biodegredable" name="biodegredable">
+        <label for="biodegredable">Biodegredable</label>
+      </div>
+      <div>
+        <input type="checkbox" id="compostable" name="compostable">
+        <label for="compostable">Compostable</label>
+      </div>
+      <div>
+        <input type="checkbox" id="home-compostable" name="home-compostable">
+        <label for="home-compostable">Home Compostable</label>
+      </div>
+      <div>
+        <input type="checkbox" id="renewed-material" name="renewed-material">
+        <label for="renewed-material">Renewed Material</label>
+      </div>
+      <div>
+        <input type="checkbox" id="bio-based" name="bio-based">
+        <label for="bio-based">Bio Based</label>
+      </div>
+      <div>
+        <input type="checkbox" id="dissolvable" name="dissolvable">
+        <label for="dissolvable">Dissolvable</label>
+      </div>
+    </div>
+  </div>
+  <div class='category__filters-inner x p1 al bcw '>
+    <span class='s18'>Quantities</span>
+    <div class='category__filters-group al mt1'>
+      <div>
+        <input type="radio" name='quantities' id="low-minimums" value="low-minimums">
+        <label for="low-minimums">Low Minimums</label>
+      </div>
+      <div>
+        <input type="radio" name='quantities' id="mixed-minimums" value="mixed-minimums">
+        <label for="mixed-minimums">Mixed Minimums</label>
+      </div>
+      <div>
+        <input type="radio" name='quantities' id="high-minimums" value="high-minimums">
+        <label for="high-minimums">High Minimums</label>
+      </div>
+      <div>
+        <input checked type="radio" name='quantities' id="show-all" value="show-all">
+        <label for="show-all">Show all</label>
+      </div>
+    </div>
+  </div>
+  <div class='category__filters-inner x p1 al bcw '>
+    <span class='s18'>Origin</span>
+    <div class='category__filters-group al mt1'>
+      <div>
+        <select id="multiple" multiple data-component='origins'>
+          <option value="china">China</option>
+          <option value="new-zealand">New Zealand</option>
+          <option value="vietnam">Vietnam</option>
+          <option value="usa">United States of America</option>
+        </select>
+      </div>
     </div>
   </div>
 

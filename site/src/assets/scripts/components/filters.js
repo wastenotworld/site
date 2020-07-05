@@ -7,7 +7,7 @@ export default component((node) => {
   const listingList = document.querySelector('.js-category-list')
   let countries = []
   const listings = listingList.querySelectorAll('.js-card')
-
+  const empty = document.querySelector('.js-empty')
   const hideAll = (className) => {
     listings.forEach(item => {
       item.classList.add(className)
@@ -33,6 +33,18 @@ export default component((node) => {
     } else {
       showAll('hidden')
     }
+    const listingLength = listings.length
+    let listingHidden = 0
+    listings.forEach(item => {
+      if (item.classList.contains('hide-qty') || item.classList.contains('hidden') || item.classList.contains('hide-filter')) {
+        listingHidden++
+      }
+    })
+    if (listingLength === listingHidden) {
+      empty.classList.remove('hidden')
+    } else {
+      empty.classList.add('hidden')
+    }
   }
 
   const qtSelect = node.querySelector('.js-quantites')
@@ -49,6 +61,7 @@ export default component((node) => {
           item.classList.remove('hide-qty')
         }
       })
+      checkIfVisible()
     })
   })
 
@@ -58,7 +71,6 @@ export default component((node) => {
       hideAll('hide-filter')
       let filtersActive = true
       checkFilter.forEach(check => {
-        console.log(check.checked, check.value)
         if (check.checked === true) {
           filtersActive = false
           listings.forEach(item => {
@@ -69,9 +81,9 @@ export default component((node) => {
         }
       })
       if (filtersActive) {
-        console.log('what?')
         showAll('hide-filter')
       }
+      checkIfVisible()
     })
   })
 

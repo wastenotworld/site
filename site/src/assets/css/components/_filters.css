@@ -7,7 +7,7 @@
       appearance: none;
       margin-right: 1rem;
       position: relative;
-      outline: red;
+
       width: 10px;
       height: 10px;
       border: none;
@@ -41,7 +41,7 @@
           left: 5px;
           top: 0px;
           border-radius: 50%;
-          background-color: red;
+          background-color: var(--green);
           position: absolute;
           content: '';
         }

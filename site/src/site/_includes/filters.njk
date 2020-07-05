@@ -1,47 +1,51 @@
-<div class='x category__filters'>
+<div class='x category__filters' data-component='filters'>
   <div class='category__filters-inner x p1 al bcw '>
     <span class='s18'>Filter</span>
-    <div class='category__filters-group al mt1'>
+    <div class='category__filters-group js-check-filters al mt1'>
       <div>
-        <input type="checkbox" id="biodegredable" name="biodegredable">
+        <input type="checkbox" id="biodegredable" name="biodegredable" value='biodegredable'>
         <label for="biodegredable">Biodegredable</label>
       </div>
       <div>
-        <input type="checkbox" id="compostable" name="compostable">
+        <input type="checkbox" id="compostable" name="compostable" value='compostable'>
         <label for="compostable">Compostable</label>
       </div>
       <div>
-        <input type="checkbox" id="home-compostable" name="home-compostable">
+        <input type="checkbox" id="home-compostable" name="home-compostable" value='home-compostable'>
         <label for="home-compostable">Home Compostable</label>
       </div>
       <div>
-        <input type="checkbox" id="renewed-material" name="renewed-material">
+        <input type="checkbox" id="renewed-material" name="renewed-material" value='renewed-material'>
         <label for="renewed-material">Renewed Material</label>
       </div>
       <div>
-        <input type="checkbox" id="bio-based" name="bio-based">
+        <input type="checkbox" id="bio-based" name="bio-based" value='bio-based'>
         <label for="bio-based">Bio Based</label>
       </div>
       <div>
-        <input type="checkbox" id="dissolvable" name="dissolvable">
+        <input type="checkbox" id="dissolvable" name="dissolvable" value='dissolable'>
         <label for="dissolvable">Dissolvable</label>
+      </div>
+      <div>
+        <input type="checkbox" id="recyclable" name="recyclable" value='recyclable'>
+        <label for="recyclable">Recyclable</label>
       </div>
     </div>
   </div>
   <div class='category__filters-inner x p1 al bcw '>
     <span class='s18'>Quantities</span>
-    <div class='category__filters-group al mt1'>
+    <div class='category__filters-group js-quantites al mt1'>
       <div>
-        <input type="radio" name='quantities' id="low-minimums" value="low-minimums">
-        <label for="low-minimums">Low Minimums</label>
+        <input type="radio" name='quantities' id="low" value="low">
+        <label for="low">Low Minimums</label>
       </div>
       <div>
-        <input type="radio" name='quantities' id="mixed-minimums" value="mixed-minimums">
-        <label for="mixed-minimums">Mixed Minimums</label>
+        <input type="radio" name='quantities' id="mixed" value="mixed">
+        <label for="mixed">Mixed Minimums</label>
       </div>
       <div>
-        <input type="radio" name='quantities' id="high-minimums" value="high-minimums">
-        <label for="high-minimums">High Minimums</label>
+        <input type="radio" name='quantities' id="high" value="high">
+        <label for="high">High Minimums</label>
       </div>
       <div>
         <input checked type="radio" name='quantities' id="show-all" value="show-all">
@@ -53,7 +57,7 @@
     <span class='s18'>Origin</span>
     <div class='category__filters-group al mt1'>
       <div>
-        <select id="multiple" multiple data-component='origins'>
+        <select id="multiple" multiple>
           <option value="china">China</option>
           <option value="new-zealand">New Zealand</option>
           <option value="vietnam">Vietnam</option>

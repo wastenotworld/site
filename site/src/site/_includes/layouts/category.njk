@@ -33,7 +33,7 @@ renderData:
 
 <div class='f category__content fw jcb ais container--xl mxa'> 
   {% include 'filters.njk' %}
-  <div class='mt1 category__list x p1'>
+  <div class='mt1 category__list js-category-list x p1'>
     {% for listing in category.content.listings %}
       {% include 'listing-card.njk' %}
     {% else %}

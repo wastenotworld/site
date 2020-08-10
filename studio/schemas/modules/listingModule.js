@@ -64,9 +64,11 @@ export default {
       type: 'string',
       options: {
         list: [
+          { value: 'none', title: 'None' },
           { value: 'low', title: 'Low minimums' },
           { value: 'mixed', title: 'Mixed minimums' },
           { value: 'high', title: 'High minimums' },
+          { value: 'inquire', title: 'Inquire' },
         ],
         layout: 'dropdown'
       },

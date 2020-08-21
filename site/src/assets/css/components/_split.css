@@ -2,11 +2,45 @@
   &__text  {
     @media (min-width: 800px) {
       text-align: left;
+      border-right: 1px solid black;
+
       &-inner {
         max-width: 600px;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
       }
+    }
+    &-s {
+      @media (min-width: 800px) {
+        max-width: calc(588px - 2rem);
+        padding: 2rem;
+        margin-top: 2rem;
+        &:last-child {
+          margin-right: 0;
+          margin-left: auto;
+          margin-bottom: 2rem;
+          margin-top: 0;
+        }
+      }
+    }
+    &-mish {
+      @media (min-width: 800px) {
+        /* height: 100vh; */
+        /* max-height: 800px; */
+      }
+    }
+    &-illy {
+      max-width: 560px;
+      padding: 2rem;
+      @media (min-width: 800px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+    }
+  }
+  &__wrapper {
+    @media (min-width: 800px) {
+      border-top: 1px solid black;
     }
   }
 }

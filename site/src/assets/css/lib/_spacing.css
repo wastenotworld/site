@@ -1,3 +1,10 @@
 .p15 {
   padding: 1.5rem;
 }
+
+.pym {
+  @media (min-width: 800px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}

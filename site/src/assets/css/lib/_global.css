@@ -31,7 +31,14 @@ body, html {
 
 .m-hide {
   display: none;
+}
 
+.jcrr {
+  flex-direction: row-reverse;
+}
+
+.fdc {
+  flex-direction: column;
 }
 
 .hidden {

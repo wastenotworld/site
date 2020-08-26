@@ -2,7 +2,9 @@
   max-width: 560px;
   padding: 1.2rem;
   border: 1px solid black;
-  border-radius: 3px;
+  background-color: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
   /* margin: 0 auto; */
   font-size: 20px;
   height: auto;
@@ -15,6 +17,18 @@
   .hero & {
     margin: 0 auto;
   }
+  .placeholder {
+    .ss-disabled {
+      color: black;
+    }
+  }
+}
+.ss-option {
+  color: black;
+}
+.ss-content .ss-list .ss-option.ss-disabled {
+  background-color: var(--white);
+  color: black;
 }
 
 .ss-option {

@@ -1,5 +1,26 @@
 .split {
   &__text  {
+    li {
+      list-style-type: none;
+      margin-left: 20px;
+      position: relative;
+      &:before {
+        width: 12px;
+        height: 12px;
+        left: -22px;
+        top: 13px;
+        background-color: var(--green);
+        position: absolute;
+        border-radius: 50%;
+        content: '';
+        @media screen and (min-width: 800px) {
+          top: 10px;
+          lefT: -28px;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
     @media (min-width: 800px) {
       text-align: left;
       border-right: 1px solid black;

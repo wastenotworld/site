@@ -27,7 +27,28 @@ async function getListings () {
       }
     },
     'supplier': *[_type =='manufacturer' && references(^._id)] [0] {
-      content,
+      content {
+        ...,
+        main {
+          ...,
+          listings[]-> {
+            ...,
+            content {
+              ...,
+              main {
+                ...,
+                'image': image.asset->,
+                origin->,
+                tags[]->
+              }
+            },
+            'supplier': *[_type =='manufacturer' && references(^._id)] [0] {
+              content,
+              _id
+            }
+          }
+        }
+      },
       _id
     }
   }`

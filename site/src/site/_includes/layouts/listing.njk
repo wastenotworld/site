@@ -19,7 +19,14 @@ renderData:
 </div>
 
 <div class=''>
-  <div class='container container--xl al mxa'>
+  <div class='container container--xl al pym supplier mxa'>
     <h3 class='s30 py1'>More listings from:</h3>
+    <div>
+      {%- for listing in listing.supplier.content.main.listings -%}
+        <div>
+          {% include 'listing-card.njk' %}
+        </div>
+      {%- endfor -%}
+    </div>
   </div>
 </div>

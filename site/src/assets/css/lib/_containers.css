@@ -20,9 +20,9 @@
 
 .container--w {
   max-width: 1240px;
-  @media screen and (min-width: 800px) {
+  /* @media screen and (min-width: 800px) {
     width: calc(100vw - 6rem);
-  }
+  } */
 }
 
 

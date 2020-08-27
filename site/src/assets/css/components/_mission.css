@@ -1,0 +1,42 @@
+.mission {
+  &__better-wrapper {
+    @media screen and (min-width: 800px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  &__better-text {
+    padding: 2rem;
+    @media screen and (min-width: 800px) {
+      padding: 4rem;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    @media screen and (min-width: 1000px) {
+      padding: 6rem;
+    }
+  }
+  &__better-img {
+    padding: 2rem;
+    img {
+      max-width: 260px;
+    }
+    @media screen and (min-width: 800px) {
+      border-right: 1px solid black;
+    }
+  }
+  &__better-block {
+    &:first-child {
+      border-bottom: none;
+    }
+  }
+  &__better-computer {
+    display: none;
+    @media screen and (min-width: 1000px) {
+      display: block;
+      max-width: 300px;
+      top: -80px;
+      right: -90px;
+    }
+  }
+}

@@ -14,3 +14,10 @@
     padding-bottom: 4rem;
   }
 }
+
+.pyl {
+  @media (min-width: 1000px) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}

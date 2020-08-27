@@ -28,6 +28,7 @@
 @import './components/_rows.css';
 @import './components/_footer.css';
 @import './components/_filters.css';
+@import './components/_supplier.css';
 
 @import './components/_hero.css';
 @import './components/_split.css';

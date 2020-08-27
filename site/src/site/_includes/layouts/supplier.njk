@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-listing
+renderData:
+  title: "{{supplier.content.main.name}}"
+---
+
+{% set title = supplier.content.main.name %}
+{% set open = 'open' %}
+
+<div class='p1 supplier'>
+  <div class='container--w container mxa al py1'>
+    <h1 class='cg my05'>{{title}}</h1>
+    <div class='f fw jcb'>
+      <p class='serif s20'>
+        {{supplier.info}}
+      </p>
+      <div>
+        <div>{{supplier.content.main.location}}</div>
+        <div>Approved for <span class='cg'>{{supplier.content.main.listings | length }} Listings</span></div>
+
+      </div>
+    </div>
+  </div>
+  <div class='container--w container mxa al py1'>
+    {%- for listing in supplier.content.main.listings -%}
+      <div class='row x'>
+        {% include 'listing-card.njk' %}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>

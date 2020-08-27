@@ -72,7 +72,7 @@
       <div class='al'>
         {% if listing.supplier %}
           <span class='s14 sm16'>{{listing.supplier.content.main.name}}</span>
-          <span class='listing__expand-name-l s14 sm16'><a class='cg' href='/manufacturer/{{listing.supplier.content.main.slug.current}}'>{{listing.supplier.content.main.listings.length}} listings</span>
+          <span class='listing__expand-name-l s14 sm16'><a class='cg' href='/supplier/{{listing.supplier.content.main.slug.current}}'>{{listing.supplier.content.main.listings.length}} listings</span>
         {% endif %}
       </div>
       <button class='listing__expand-source naked js-source-open'>

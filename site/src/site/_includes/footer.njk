@@ -1,29 +1,34 @@
-<footer class='f jcb fw rel aic alt js-alt  bcw footer'>
-  <div class='x c50'>
+<footer class='f jcb fw rel aist alt js-alt  bcw footer'>
+  <div class='x c50 footer__main'>
     <div class='x p15 bb footer__block footer__logo'>
-      <div class='footer__inner mxa cg'>
+      <div class='footer__inner footer__logo mxa cg'>
         {% include 'logo.njk' %}
       </div>
     </div>
-    <div class='al p15 bb footer__block'>
-      <div class='footer__inner mxa'>
-        <span class='caps'>WN V1.0 {{ site.buildTime | dateDisplay('LLL d, yyyy - HH:mm') }}</span>
-        <p class='s28 bold'>
-          Waste Not is a free website. You're currently experiencing <a href='' class='cg'>Version 1.0</a>
-        </p>
-        <a href='' class='button caps'>Versioning &amp; How to Support</a>
+    <div class='footer__block-wrapper'>
+      <div class='al p15 bb footer__block'>
+        <div class='footer__inner mxa'>
+          <span class='caps'>WN V1.0 {{ site.buildTime | dateDisplay('LLL d, yyyy - HH:mm') }}</span>
+          <p class='s28 bold'>
+            Waste Not is a free website. You're currently experiencing <a href='' class='cg'>Version 1.0</a>
+          </p>
+          <a href='' class='button caps'>Versioning &amp; How to Support</a>
+        </div>
       </div>
-    </div>
-    <div class='p15 al footer__block'>
-      <div class='footer__inner mxa'>
-        <ul class='footer__links m0 p0 f fw jcb'>
-          <li><a class='s28 mb05' href='mailto:help@site.com'>Get in Touch</a></li>
-          <li><a class='s28 mb05' href=''>Instagram</a></li>
-          <li><a class='s28 mb05' href='/contribution-guidelines'>Guidelines</a></li>
-          <li><a class='s28 mb05' href=''>Twitter</a></li>
-          <li><a class='s28 ' href=''>Credits</a></li>
-          <li><a class='s28 ' href=''>Github</a></li>
-        </ul>
+      <div class='p15 al footer__block'>
+        <div class='footer__inner mxa'>
+          <ul class='footer__links m0 p0 f fw jcb'>
+            <li><a class='s28 mb05' href='/listings'>Listings</a></li>
+            <li><a class='s28 mb05' href='mailto:help@site.com'>Contact</a></li>
+            <li><a class='s28 mb05' href=''>Instagram</a></li>
+            <li><a class='s28 mb05' href='/mission'>Mission</a></li>
+            <li><a class='s28 mb05' href='/contribution-guidelines'>Guidelines</a></li>
+            <li><a class='s28 mb05' href=''>Twitter</a></li>
+            <li><a class='s28 mb05' href='/submit'>Submit</a></li>
+            <li><a class='s28 ' href=''>Credits</a></li>
+            <li><a class='s28 ' href=''>Github</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -33,7 +38,7 @@
       <span class='s28 mt1 block pt05'>Subscribe to the <span class='cg'>Trash Talk</span> newsletter</span>
       <p class=''>Not junk mail; Just profiles on suppliers, materials, innovators and more.</p>
       <form class="newsletter__form rel">
-        <input required class=" x py1 container--s" type="email" name="email" placeholder='Your Email' />
+        <input required class=" x py05 serif s22 container--s" type="email" name="email" placeholder='Email' />
         <button type="submit" class="caps bcp abs bold bottom right">
           <span>Submit</span>
         </button>

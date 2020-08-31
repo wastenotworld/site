@@ -1,13 +1,42 @@
 .footer {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  &__main {
+    @media (min-width: 1200px) {
+      width: 54%;
+      .footer__inner {
+        margin: 0 0;
+      }
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  }
   &__block {
     @media (min-width: 800px) {
       padding-top: 3rem;
       padding-bottom: 3rem;
+      border-bottom: none;
+    }
+    &-wrapper {
+      @media (min-width: 1200px) {
+        display: flex;
+        > div {
+          width: 40%;
+          &:last-child {
+            width: 60%;
+          }
+        }
+      }
     }
   }
   &__inner {
+    max-width: 522px;
+    @media (min-width: 1200px) {
+      max-width: 800px;
+    }
+  }
+  &__logo {
     max-width: 522px;
   }
   &__links {
@@ -17,13 +46,21 @@
     li {
       margin: 0;
       padding: 0;
-      width: 50%;
+      width: 33.3333%;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 3.1rem;
     }
   }
   .newsletter {
     border-top: 1px solid black;
     @media (min-width: 800px) {
       border-top: 0;
+    }
+    @media (min-width: 1200px) {
+      width: 40%;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
     input {
       border: none;
@@ -36,9 +73,11 @@
       border: 1px solid currentColor;
       color: currentColor;
       font-size: 17px;
+      font-weight: 500 !important;
       padding: 0.8rem 2rem 0.6rem;
-      border-top-left-radius: 30px;
-      border-top-right-radius: 30px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      letter-spacing: 0.04em;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       cursor: pointer;

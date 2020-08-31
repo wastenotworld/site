@@ -13,7 +13,7 @@ export default component((node) => {
   }
 
   const idleTracker = new IdleTracker({
-    timeout: 20000,
+    timeout: 100000,
     onIdleCallback: idleFunction
   })
 

@@ -4,6 +4,10 @@
   border-radius: 13px;
   border: 1px solid black;
   letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--blue);
+  }
 }
 
 button.naked {

@@ -24,7 +24,7 @@
   user-select: none;
   pointer-events: none;
   transition: all 0.3s ease-in-out;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
   .show-screensaver & {
     opacity: 1;
   }

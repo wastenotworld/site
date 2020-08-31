@@ -38,6 +38,8 @@
     "eleventy-plugin-pwa": "^1.0.8",
     "groq": "^1.149.0",
     "html-minifier": "^4.0.0",
+    "idle-tracker": "^0.0.7",
+    "idlejs": "^3.0.0",
     "js-cookie": "^2.2.1",
     "klaviyo-subscribe": "^1.0.0",
     "lodash": "^4.17.15",

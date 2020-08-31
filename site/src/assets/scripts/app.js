@@ -5,6 +5,7 @@ import form from './lib/form.js'
 import pop from './components/pop.js'
 import filters from './components/filters.js'
 import listingCard from './components/listing-card.js'
+import screensaver from './components/screensaver.js'
 import easy from './components/easy.js'
 
 const state = {
@@ -15,6 +16,7 @@ const components = {
   image,
   pop,
   listingCard,
+  screensaver,
   filters,
   easy,
   form

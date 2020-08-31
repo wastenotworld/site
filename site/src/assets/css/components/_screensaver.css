@@ -1,0 +1,31 @@
+.screensaver {
+  &__bulb {
+    width: 80vw;
+    @media (min-width: 800px) {
+      width: 40%;
+      max-width: 512px;
+      position: absolute;
+      right: 0;
+      bottom: 5rem;
+    }
+  }
+  &__logo {
+    max-width: 180px;
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__inner {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 1s;
+  .show-screensaver & {
+    opacity: 1;
+  }
+}

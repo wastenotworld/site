@@ -16,5 +16,211 @@ layout: layouts/base.njk
         <option value="manufacturer">I'm a manufacturer</option>
       </select>
     </div>
+    <div class='container--m inner' id='savvy'>
+      <p class='serif s20 my1 py1'>Waste Not is a free website. We are run on GitHub and audited by the community. For our volunteers to fact-check, we require that you detail all the information a listing requires to submit. Before you get started:</p>
+      <form action='https://github.com'>
+        <div>
+          <label class='block ba form__checkbox mb1 bcw p1 br'>
+            <input type='checkbox' value='guidelines'>
+            <span class='s20 serif block rel'>If this is your first contribution to the Waste Not open source repo, follow the Contribution guidelines.</span>
+          </label>
+        </div>
+        <div>
+          <label class='block ba form__checkbox mb1 bcw p1 br'>
+            <input type='checkbox' value='guidelines'>
+            <span class='s20 serif block rel'>Please check that your submission does not already exist by searching our listings or https://github.com/wastenot/wastenot/pulls.</span>
+          </label>
+        </div>
+        <button type='submit' class='button caps mt1'>Submit a Listing</button>
+      </form>
+    </div>
+
+    <div class='container--m inner' id='savvy'>
+      <p class='serif s20 my1 py1'>Don’t worry, we’ll help you get it posted. Waste Not is a free website. For our volunteers to fact-check, we require that you detail all the information a listing requires to submit.</p>
+      <form action='https://github.com'>
+        <div class='mb1'>
+          <label>
+            <span class='s18 mb05 block '>Your Email</span>
+            <input type='email' name='email' class='br x cm50 bcw ba p1' />
+          </label>
+        </div>
+        <div>
+          <label class='block ba form__checkbox mb1 bcw p1 br'>
+            <input type='checkbox' value='guidelines'>
+            <span class='s20 serif block rel'>If this is your first contribution to Waste Not please read the Contribution guidelines to make sure your listing meets all necessary criteria. Then check this box to confirm.</span>
+          </label>
+        </div>
+        <div class='f jcb fw ais mt1 pt1'>
+          <div class='mb1 cm50 x'>
+            <label>
+              <span class='s18 mb05 block '>Material or product name</span>
+              <input type='text' name='materialName' class='br x bcw ba p1' />
+            </label>
+          </div>
+          <div class='mb1 cm50 x'>
+            <label>
+              <span class='s18 mb05 block '>Material or product URL</span>
+              <input type='text' name='materialURL' class='br x bcw ba p1' />
+            </label>
+          </div>
+        </div>
+        <div class='f jcb fw ais '>
+          <div class='mb1 cm50 x'>
+            <label>
+              <span class='s18 mb05 block '>Parent supplier name</span>
+              <input type='text' name='supplierName' class='br x bcw ba p1' />
+            </label>
+          </div>
+          <div class='mb1 cm50 x'>
+            <label>
+              <span class='s18 mb05 block '>Parent supplier URL</span>
+              <input type='text' name='supplierURL' class='br x bcw ba p1' />
+            </label>
+          </div>
+        </div>
+        <div class='f jcb fw ais '>
+          <div class='mb1 cm50 x'>
+            <label>
+              <span class='s18 mb05 block '>Country</span>
+              <input type='text' name='country' class='br x bcw ba p1' />
+            </label>
+          </div>
+          <div class='mb1 cm50 x'>
+            <label>
+              <span class='s18 mb05 block '>City</span>
+              <input type='text' name='city' class='br x bcw ba p1' />
+            </label>
+          </div>
+        </div>
+        <div class='mt05'>
+          <textarea name='description' class='bcw p1 ba br serif x' placeholder='Short paragraph describing the good or material'></textarea>
+        </div>
+
+        <div class='mt05 cm50'>
+          <label>
+            <span class='s18 mb05 block'>What are the minimums like?</span>
+            <select name="minimums" id="minimums" data-component='easy'>
+              <option value="low">Low Minimums</option>
+              <option value="high">High Minimums</option>
+              <option value="no">No Minimums</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <span class='s18 block mt1 pt1 mb05'>Is it? (Only check if you know)</span>
+          <div class='f jcb ais fw'>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='biodegradable'>
+                <span class='s20 serif block rel'>Biodegradable</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='compostable'>
+                <span class='s20 serif block rel'>Compostable</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='homeCompostable'>
+                <span class='s20 serif block rel'>Home Compostable</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='renewedMaterial'>
+                <span class='s20 serif block rel'>Renewed Material</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='bioBased'>
+                <span class='s20 serif block rel'>Bio Based</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='dissolvable'>
+                <span class='s20 serif block rel'>Dissolvable</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='recyclable'>
+                <span class='s20 serif block rel'>Recyclable</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class='s18 block mt1 pt1 mb05'>Tags (optional)</span>
+          <div class='f jcb ais fw'>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='customizable'>
+                <span class='s20 serif block rel'>Customizable</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='claimsLowEnergy'>
+                <span class='s20 serif block rel'>Claims low energy usage</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='rangeOfFinishes'>
+                <span class='s20 serif block rel'>Range of finishes</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='claimsClosed'>
+                <span class='s20 serif block rel'>Claims closed loop</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='dropShip'>
+                <span class='s20 serif block rel'>Drop ship options</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='claimsRenewable'>
+                <span class='s20 serif block rel'>Claims renewable natural resource</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='claimsLowWater'>
+                <span class='s20 serif block rel'>Claims low water usage</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='claimsLowerGreenhouse'>
+                <span class='s20 serif block rel'>Claims lower greenhouse emissions</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='claimsCarbon'>
+                <span class='s20 serif block rel'>Claims carbon neutrality</span>
+              </label>
+            </div>
+            <div class='cm50 x mt1 mb05'>
+              <label class='block ba form__checkbox no-style'>
+                <input type='checkbox' value='claimsZero'>
+                <span class='s20 serif block rel'>Claims zero waste</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type='submit' class='button caps mt1'>Submit Listing</button>
+      </form>
+    </div>
   </div>
 </div>

@@ -1,0 +1,28 @@
+.form {
+  &__checkbox {
+    &.no-style {
+      border: none;
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+    }
+    span {
+      padding-left: 40px;
+      &:before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 30px;
+        border: 2px solid black;
+        background-color: var(--white);
+        left: 0;
+      }
+    }
+    input:checked + span {
+      &:before {
+        background-color: var(--green);
+      }
+    }
+  }
+}

@@ -5,6 +5,12 @@
   }
 }
 
+.cm50 {
+  @media (min-width: 800px) {
+    width: calc(50% - 10px);
+  }
+}
+
 .c33 {
   @media (min-width: 800px) {
     width: calc(33.333%);

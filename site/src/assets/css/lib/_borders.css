@@ -12,6 +12,10 @@
   border-top: 1px solid black;
 }
 
+.br {
+  border-radius: 6px;
+}
+
 .bb800 {
   @media screen and (min-width: 800px) {
     border-bottom: 1px solid black;

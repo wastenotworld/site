@@ -3,20 +3,20 @@ title: Submit
 layout: layouts/base.njk
 ---
 
-<div class='submit f fw jcb'>
+<div class='submit f fw jcb' data-component='submit'>
   <div class='submit__image ac p15 rel f jcc aic x'>
     <img class='abs x y top obj-fit left' src='/images/submit.jpg' alt='contribution guidelines' />
   </div>
   <div class='submit__text p15 al'>
     <div class='inner container--m'>
       <h1 class='cg mb05'>Submit a listing</h1>
-      <select name="navigation" id="navigationalDrop" data-component='easy'>
+      <select name="navigation" class='js-submit-view' id="submitListing">
         <option value="savvy">I'm tech savvy or on Github</option>
         <option value="help">I need help submitting</option>
         <option value="manufacturer">I'm a manufacturer</option>
       </select>
     </div>
-    <div class='container--m inner' id='savvy'>
+    <div class='container--m inner js-view js-tech' id='savvy'>
       <p class='serif s20 my1 py1'>Waste Not is a free website. We are run on GitHub and audited by the community. For our volunteers to fact-check, we require that you detail all the information a listing requires to submit. Before you get started:</p>
       <form action='https://github.com'>
         <div>
@@ -35,7 +35,7 @@ layout: layouts/base.njk
       </form>
     </div>
 
-    <div class='container--m inner' id='supplier'>
+    <div class='container--m inner js-view js-supplier hidden' id='supplier'>
       <p class='serif s20 my1 py1'>We’ll work directly with you to get multiple items approved and listed. Please know that Waste Not is a free website. For our volunteers to fact-check, we require that you work with us to submit your listing.</p>
       <form action='https://github.com'>
         <div>
@@ -91,7 +91,7 @@ layout: layouts/base.njk
     </div>
 
 
-    <div class='container--m inner' id='manufacturer'>
+    <div class='container--m inner js-view js-help hidden' id=''>
       <p class='serif s20 my1 py1'>Don’t worry, we’ll help you get it posted. Waste Not is a free website. For our volunteers to fact-check, we require that you detail all the information a listing requires to submit.</p>
       <form action='https://github.com'>
         <div class='mb1'>

@@ -2,7 +2,7 @@
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   &__main {
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
       width: 54%;
       .footer__inner {
         margin: 0 0;
@@ -19,7 +19,7 @@
       border-bottom: none;
     }
     &-wrapper {
-      @media (min-width: 1200px) {
+      @media (min-width: 1800px) {
         display: flex;
         > div {
           width: 40%;
@@ -39,6 +39,9 @@
   &__logo {
     max-width: 522px;
   }
+  &__description {
+    max-width: 460px;
+  }
   &__links {
     list-style-type: none;
     margin: 0;
@@ -57,7 +60,7 @@
     @media (min-width: 800px) {
       border-top: 0;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
       width: 40%;
       padding-top: 3rem;
       padding-bottom: 3rem;

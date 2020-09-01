@@ -15,3 +15,6 @@
 .LSOverride
 
 .cache/
+
+# Local Netlify folder
+.netlify

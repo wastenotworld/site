@@ -53,6 +53,10 @@
 
 .ss-content {
   border: 0;
+  z-index: 10;
+  .submit & {
+    max-width: 560px;
+  }
   .ss-list {
     @media (min-width: 800px) {
       max-height: 340px;
@@ -71,4 +75,8 @@
       background-color: var(--blue);
     }
   }
+}
+
+.ss-content .ss-list .ss-option {
+  padding: 10px 18px;
 }

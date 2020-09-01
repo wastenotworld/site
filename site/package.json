@@ -9,14 +9,16 @@
     "clean:cache": "rimraf ./.cache",
     "clean:dist": "rimraf ./dist",
     "clean:bundle": "rimraf ./bundle",
+    "build:lambda": "netlify-lambda build src/lambda",
     "start": "npm run dev",
     "build": "cross-env ELEVENTY_ENV=production run-s clean:* build:assets build:html",
     "build:html": "eleventy",
+    "__postinstall": "netlify-lambda install",
     "build:assets": "parcel build ./src/assets/css/styles.css ./src/assets/scripts/index.js --out-dir ./dist/bundle --no-source-maps",
     "watch": "cross-env ELEVENTY_ENV=development run-s clean:* build:assets && run-p serve watch:*",
     "serve": "eleventy --serve --port=8080",
     "watch:assets": "parcel watch ./src/assets/css/styles.css ./src/assets/scripts/index.js --out-dir ./dist/bundle --no-source-maps",
-    "dev": "yarn watch"
+    "dev": "export NETLIFY_DEV=true; netlify dev:exec netlify-lambda serve src/lambda --port 34567 --timeout 20 & netlify dev:exec yarn watch"
   },
   "repository": {
     "type": "git",
@@ -46,6 +48,7 @@
     "luxon": "^1.16.0",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.7",
+    "netlify-lambda": "^2.0.1",
     "operator": "^1.6.1",
     "picoapp": "^3.6.1",
     "poppy": "^1.0.3",
@@ -75,6 +78,13 @@
     "parcel-bundler": "1.12.4",
     "postcss-cli": "7.1.0",
     "prettier": "1.19.1",
-    "rimraf": "3.0.0"
+    "rimraf": "3.0.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.1.0",
+    "typescript": "^3.7.2"
   }
 }

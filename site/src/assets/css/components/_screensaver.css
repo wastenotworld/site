@@ -27,5 +27,6 @@
   transition-delay: 0.5s;
   .show-screensaver & {
     opacity: 1;
+    z-index: 2000;
   }
 }

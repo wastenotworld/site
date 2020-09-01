@@ -18,8 +18,8 @@ module.exports = function(config) {
   config.addPassthroughCopy("./src/site/manifest.json");
 
   // service workers
-  if (env !== 'dev') {
-    config.addPlugin(pluginPWA);
+  if (env !== undefined) {
+    // config.addPlugin(pluginPWA);
   }
 
   // Add some utility filters

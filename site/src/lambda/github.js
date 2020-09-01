@@ -5,7 +5,7 @@ import {
 
 export const handler = async (event) => {
   try {
-    return statusReturn(200, { data: 'success' })
+    return statusReturn(200, { body: 'success' })
   } catch (err) {
     console.log(err)
     return statusReturn(500, { error: err.message })

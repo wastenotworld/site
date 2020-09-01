@@ -12,6 +12,10 @@ body {
   font-family: 'Times New Roman';
 }
 
+.helv {
+  font-family: 'Helvetica Neue';
+}
+
 .medium {
   font-weight: 600;
 }
@@ -119,6 +123,10 @@ a {
   font-size: 14px;
   line-height: 1.3;
   font-weight: 500;
+}
+
+.s15 {
+  font-size: 15px;
 }
 
 .sm16 {

@@ -16,7 +16,7 @@
     "__postinstall": "netlify-lambda install",
     "build:assets": "parcel build ./src/assets/css/styles.css ./src/assets/scripts/index.js --out-dir ./dist/bundle --no-source-maps",
     "watch": "cross-env ELEVENTY_ENV=development run-s clean:* build:assets && run-p serve watch:*",
-    "serve": "eleventy --serve --port=8080",
+    "serve": "eleventy --serve --quiet --port=8080",
     "watch:assets": "parcel watch ./src/assets/css/styles.css ./src/assets/scripts/index.js --out-dir ./dist/bundle --no-source-maps",
     "dev": "export NETLIFY_DEV=true; netlify dev:exec netlify-lambda serve src/lambda --port 34567 --timeout 20 & netlify dev:exec yarn watch"
   },
@@ -27,7 +27,13 @@
   "dependencies": {
     "@11ty/eleventy": "^0.8.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/plugin-transform-object-assign": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
     "@friendsof/spaghetti": "^1.4.1",
+    "@octokit/core": "^3.1.2",
     "@sanity/block-content-to-markdown": "^0.0.5",
     "@sanity/client": "^1.149.7",
     "autoprefixer": "^9.6.0",

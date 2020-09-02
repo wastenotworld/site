@@ -15,7 +15,7 @@ const headers = {
 // }
 
 
-const statusReturn = (code, body) => {
+const statusReturn = (code: number, body: {}) => {
   return {
     statusCode: code,
     headers,

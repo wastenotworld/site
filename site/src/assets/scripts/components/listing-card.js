@@ -22,4 +22,16 @@ export default component((node) => {
     source.classList.add('hidden')
     mistake.classList.remove('hidden')
   })
+
+  const mistakeForm = node.querySelector('.js-mistake-form')
+
+  mistakeForm.addEventListener('submit', e => {
+    e.preventDefault()
+    console.log('wiyo?')
+    fetch(`/api/github`)
+      .then(res => res.json())
+      .then(json => {
+        console.log('hey man?', json)
+      })
+  })
 })

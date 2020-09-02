@@ -1,8 +1,12 @@
 import { APIGatewayEvent } from 'aws-lambda'
 import { Octokit } from '@octokit/core'
 
+import {
+  GIT_AUTH
+} from process.env
+
 const octokit = new Octokit({
-  auth: `50973cdf9877f05848ea267dc59eea47e2c79e4e`
+  auth: GIT_AUTH
 })
 
 import {

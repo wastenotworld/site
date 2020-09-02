@@ -1,3 +1,6 @@
+[[plugins]]
+  package = "@netlify/plugin-functions-install-core"
+
 [build]
   command = "npm run build"
   publish = "dist"
@@ -6,7 +9,6 @@
 
 [dev]
   command = "npm run start"
-
 
 [[redirects]]
   from = "/api/*"

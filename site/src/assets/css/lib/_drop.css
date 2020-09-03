@@ -44,7 +44,21 @@
 }
 
 .ss-arrow {
-  display: none !important;
+  /* display: none !important; */
+}
+
+.ss-main .ss-single-selected .ss-arrow span {
+  border: 0;
+  padding: 0 !important;
+  transform: none !important;
+  border-top: 5px solid black;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+
+.ss-main .ss-single-selected.ss-open-below .ss-arrow span {
+  transform: rotate(180deg) !important;
 }
 
 .hero .ss-main {

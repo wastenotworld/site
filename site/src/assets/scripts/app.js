@@ -3,6 +3,7 @@ import { picoapp } from 'picoapp'
 import image from './lib/image.js'
 import form from './lib/form.js'
 import pop from './components/pop.js'
+import header from './components/header.js'
 import submit from './components/submit.js'
 import filters from './components/filters.js'
 import listingCard from './components/listing-card.js'
@@ -16,6 +17,7 @@ const state = {
 const components = {
   image,
   pop,
+  header,
   listingCard,
   submit,
   screensaver,

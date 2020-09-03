@@ -1,3 +1,6 @@
+.cs50 {
+  width: 50%;
+}
 
 .c50 {
   @media (min-width: 800px) {

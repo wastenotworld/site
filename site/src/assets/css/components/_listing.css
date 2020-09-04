@@ -1,6 +1,13 @@
 .listing {
+  &__badge {
+    @media (min-width: 1000px) {
+      position: absolute;
+      right: 1.5rem;
+      top: 0;
+    }
+  }
   &__landing {
-    padding: 3.2rem 0 3rem;
+    padding: 3.2rem 0 0.5rem;
     @media (min-width: 700px) {
       padding: 5.2rem 0 5rem;
     }
@@ -76,6 +83,12 @@
     &-link {
       width: 50%;
       border-right: 1px solid black;
+      a {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: var(--blue);
+        }
+      }
       @media (min-width: 800px) {
         width: 30%;
         border-left: 1px solid black;

@@ -11,14 +11,28 @@ renderData:
 <div class='p1 supplier'>
   <div class='container--w container mxa al py1'>
     <h1 class='cg my05'>{{title}}</h1>
-    <div class='f fw jcb'>
-      <p class='serif s20'>
-        {{supplier.info}}
-      </p>
+    <div class='f fw jcb supplier__flex'>
       <div>
-        <div>{{supplier.content.main.location}}</div>
-        <div>Approved for <span class='cg'>{{supplier.content.main.listings | length }} Listings</span></div>
-
+        <p class='serif s20'>
+          {{supplier.info}}
+        </p>
+      </div>
+      <div class='supplier__info x'>
+        <div class='supplier__info-nested'>
+          <div class='x'>
+            <span class='bold py05 block'>{{supplier.content.main.location}}</span>
+          </div>
+          <div class='x'>
+            <span class='bold py05 block'>Approved for <span class='cg'>{{supplier.content.main.listings | length }} Listings</span></span>
+          </div>
+        </div>
+        <div class='supplier__info-add mt1'>
+          {% if supplier.content.main.url %}
+            <a href={{supplier.content.main.url}} class='button caps ac'>
+              <span>Visit Website</span>
+            </a>
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>

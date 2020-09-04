@@ -3,4 +3,28 @@
     margin-left: 0;
     margin-right: 0;
   }
+  &__flex {
+    max-width: 940px;
+    @media (min-width: 800px) {
+      > div {
+        width: 50%;
+      }
+    }
+  }
+  &__info {
+    &-nested {
+      > div {
+        border-bottom: 1px solid black;
+      }
+    }
+    @media (min-width: 800px) {
+      margin-top: 1.2rem;
+      max-width: 400px;
+    }
+    &-nested {
+      @media (min-width: 800px) {
+        max-width: 300px;
+      }
+    }
+  }
 }

@@ -7,17 +7,17 @@ module.exports = {
         'nesting-rules': true,
       },
     }),
-    require('cssnano')({
-      preset: [
-        'advanced',
-        {
-          discardComments: {
-            removeAll: true,
-          },
-          reduceIdents: false,
-        },
-      ],
-    }),
+    // require('cssnano')({
+    //   preset: [
+    //     'advanced',
+    //     {
+    //       discardComments: {
+    //         removeAll: true,
+    //       },
+    //       reduceIdents: false,
+    //     },
+    //   ],
+    // }),
     require('postcss-nested'),
     require('postcss-custom-media'),
     require('postcss-calc'),

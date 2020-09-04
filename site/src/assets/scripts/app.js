@@ -2,6 +2,7 @@ import { picoapp } from 'picoapp'
 
 import image from './lib/image.js'
 import form from './lib/form.js'
+import footer from './components/footer.js'
 import pop from './components/pop.js'
 import header from './components/header.js'
 import submit from './components/submit.js'
@@ -20,6 +21,7 @@ const components = {
   header,
   listingCard,
   submit,
+  footer,
   screensaver,
   filters,
   easy,

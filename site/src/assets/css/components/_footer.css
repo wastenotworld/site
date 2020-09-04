@@ -1,6 +1,19 @@
 .footer {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  &__credits {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    user-select: none;
+    pointer-events: none;
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      user-select: auto;
+    }
+  }
   &__main {
     @media (min-width: 1400px) {
       width: 54%;
@@ -101,6 +114,14 @@
   &__illy {
     @media (min-width: 800px) {
       max-width: 420px;
+    }
+  }
+  &__credits {
+    img {
+      max-width: 300px;
+    }
+    p {
+      line-height: 1.9;
     }
   }
 }

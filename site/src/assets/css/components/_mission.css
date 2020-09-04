@@ -40,12 +40,20 @@
     }
   }
   &__guarentee {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: all 0.3s ease-in-out;
+    user-select: none;
     border-top: 1px solid black;
     @media (min-width: 800px) {
       padding: 2rem 2rem 0.6rem;
     }
     li {
       padding: 0.4rem 0;
+    }
+    .open & {
+      opacity: 1;
+      transform: translateY(0px);
     }
   }
 }

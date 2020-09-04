@@ -1,4 +1,26 @@
 .listings {
+  &__similar {
+    .hide-nest {
+      display: none;
+    }
+    .listings__friends {
+      max-width: 350px;
+      @media (min-width: 800px) {
+        position: absolute;
+        left: 1.5rem;
+        top: -1rem;
+      }
+    }
+    &--footer {
+      position: relative;
+      @media (min-width: 800px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 350px;
+      }
+    }
+  }
   &__index {
     @media screen and (min-width: 800px) {
       padding: 2rem;

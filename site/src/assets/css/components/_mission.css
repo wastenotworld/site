@@ -39,4 +39,13 @@
       right: -90px;
     }
   }
+  &__guarentee {
+    border-top: 1px solid black;
+    @media (min-width: 800px) {
+      padding: 2rem 2rem 0.6rem;
+    }
+    li {
+      padding: 0.4rem 0;
+    }
+  }
 }

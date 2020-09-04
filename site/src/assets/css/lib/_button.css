@@ -9,6 +9,9 @@
   &:hover {
     background-color: var(--blue);
   }
+  &--clear {
+    background-color: transparent;
+  }
 }
 
 button.naked {

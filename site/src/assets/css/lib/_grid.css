@@ -19,3 +19,15 @@
     width: calc(33.333%);
   }
 }
+
+.c30 {
+  @media (min-width: 800px) {
+    width: 30%;
+  }
+}
+
+.c60 {
+  @media (min-width: 800px) {
+    width: 60%;
+  }
+}

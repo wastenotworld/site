@@ -27,6 +27,13 @@ export default component((node) => {
     }
   }
 
+  const supplierForm = supplier.querySelector('form')
+
+  supplierForm.addEventListener('submit', e => {
+    e.preventDefault()
+    console.log('supply space')
+  })
+
   new SlimSelect({
     select: selectMain,
     showSearch: false,

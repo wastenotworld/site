@@ -2,9 +2,6 @@
 title:  Waste Not
 subtitle: make that better world
 layout: layouts/base.njk
-pagination:
-  data: listings
-  size: 2
 ---
 
 <div class='hero bb f jcc ais rel'>
@@ -74,7 +71,7 @@ pagination:
       <img src='/images/sun.webp' alt='sun' class='abs z1 h__listings-sun top right' />
     </div>
     <div class='container--l mxa'>
-      {%- for listing in pagination.items -%}
+      {%- for listing in myListings.items -%}
         <div class='row ac x'>
           {% include 'listing-card.njk' %}
         </div>

@@ -163,7 +163,7 @@ a {
   }
 }
 
-.s28 {
+.s28, h4, .h4 {
   font-size: 20px;
   font-weight:500;
   @media (min-width: 800px) {

@@ -44,6 +44,8 @@
     "dotenv": "^8.0.0",
     "easydropdown": "^4.2.0",
     "eleventy-plugin-pwa": "^1.0.8",
+    "form-serialize": "^0.7.2",
+    "form-serializer": "^2.5.0",
     "groq": "^1.149.0",
     "html-minifier": "^4.0.0",
     "idle-tracker": "^0.0.7",

@@ -31,6 +31,12 @@ body, html {
   display: none;
 }
 
+.alm {
+  @media (min-width: 800px) {
+    text-align: left;
+  }
+}
+
 .jcrr {
   flex-direction: row-reverse;
 }
@@ -46,6 +52,12 @@ body, html {
 .obj-fit {
   object-fit: cover;
   object-position: center center;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: black;
 }
 
 /* .arrow-helper {

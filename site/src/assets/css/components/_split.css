@@ -21,6 +21,13 @@
         }
       }
     }
+    &-versioning {
+      width: 80%;
+      margin: 2rem auto;
+      @media (min-width: 800px) {
+        margin: 1rem 0;
+      }
+    }
     @media (min-width: 800px) {
       text-align: left;
       border-right: 1px solid black;
@@ -32,6 +39,10 @@
       }
     }
     &-s {
+      img {
+        width: 80%;
+        margin: 0 auto;
+      }
       @media (min-width: 800px) {
         max-width: calc(588px - 2rem);
         padding: 2rem;
@@ -41,6 +52,16 @@
           margin-left: auto;
           margin-bottom: 2rem;
           margin-top: 0;
+        }
+        .no-borders & {
+          max-width: calc(588px);
+          margin-top: 0;
+        }
+        img {
+          max-width: 400px;
+          max-height: 400px;
+          width: auto;
+
         }
       }
     }
@@ -57,6 +78,9 @@
         padding-top: 5rem;
         padding-bottom: 5rem;
       }
+    }
+    .no-borders & {
+      border: 0;
     }
   }
   &__wrapper {

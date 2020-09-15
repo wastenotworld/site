@@ -31,7 +31,8 @@ export default component((node) => {
 
   supplierForm.addEventListener('submit', e => {
     e.preventDefault()
-    console.log('supply space')
+
+    console.log('supply space', e.currentTarget.elements)
   })
 
   new SlimSelect({

@@ -2,6 +2,7 @@
 title:  Waste Not
 subtitle: make that better world
 layout: layouts/base.njk
+data: index
 ---
 
 <div class='hero bb f jcc ais rel'>
@@ -71,7 +72,7 @@ layout: layouts/base.njk
       <img src='/images/sun.webp' alt='sun' class='abs z1 h__listings-sun top right' />
     </div>
     <div class='container--l mxa'>
-      {%- for listing in myListings.items -%}
+      {%- for listing in homeListings -%}
         <div class='row ac x'>
           {% include 'listing-card.njk' %}
         </div>

@@ -19,7 +19,7 @@ module.exports = function(config) {
 
   // service workers
   if (env !== undefined) {
-    // config.addPlugin(pluginPWA);
+    config.addPlugin(pluginPWA);
   }
 
   // Add some utility filters

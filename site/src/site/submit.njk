@@ -43,13 +43,13 @@ layout: layouts/base.njk
         <div class='f jcb fw ais mt1 pt1'>
           <div class='mb1 cm50 x'>
             <label>
-              <span class='s18 mb05 block '>Your name</span>
+              <span class='s18 mb05 block'>Your name</span>
               <input type='text' required name='name' class='br x bcw ba p1' />
             </label>
           </div>
           <div class='mb1 cm50 x'>
             <label>
-              <span class='s18 mb05 block '>Your email</span>
+              <span class='s18 mb05 block'>Your email</span>
               <input type='email' required name='email' class='br x bcw ba p1' />
             </label>
           </div>
@@ -57,14 +57,14 @@ layout: layouts/base.njk
         <div class='f jcb fw ais mt1 pt1'>
           <div class='mb1 cm50 x'>
             <label>
-              <span class='s18 mb05 block '>Your phone number (optional)</span>
+              <span class='s18 mb05 block'>Your phone number (optional)</span>
               <input type='text' name='phone' class='br x bcw ba p1' />
             </label>
           </div>
           <div class='mb1 cm50 x'>
             <label>
-              <span class='s18 mb05 block '>Your company's URL</span>
-              <input type='text'required  name='companyURL' class='br x bcw ba p1' />
+              <span class='s18 mb05 block'>Your company's URL</span>
+              <input type='text'required  name='$companyURL' class='br x bcw ba p1' />
             </label>
           </div>
         </div>
@@ -72,13 +72,13 @@ layout: layouts/base.njk
           <div class='mb1 x'>
             <label>
               <span class='s18 mb05 block '>Do your know what you'd like to list?</span>
-              <input type='text' required name='listing' class='br x bcw ba p1' />
+              <input type='text' required name='$listing' class='br x bcw ba p1' />
             </label>
           </div>
         </div>
         <div>
           <label class='block ba form__checkbox mb1 bcw p1 br'>
-            <input required type='checkbox' value='guidelines'>
+            <input name='guidelines' required type='checkbox'>
             <span class='s20 serif block rel'>I've read the <a class='cg underline' href='/contribution-guidelines'>Contribution guidelines</a> to make sure my listings potetially meet all necessary criteria.</span>
           </label>
         </div>

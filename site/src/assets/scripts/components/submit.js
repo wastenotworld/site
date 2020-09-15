@@ -1,6 +1,16 @@
 import { component } from 'picoapp'
 import SlimSelect from 'slim-select'
 
+
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => {
+      console.log('hey key', data)
+      return `"${data[key].name}":"${data[key].value}"`
+    })
+    .join(',')
+}
+
 export default component((node) => {
   const selectMain = node.querySelector('.js-submit-view')
 
@@ -32,7 +42,17 @@ export default component((node) => {
   supplierForm.addEventListener('submit', e => {
     e.preventDefault()
 
-    console.log('supply space', e.currentTarget.elements)
+    const formFields = `{${encode(e.currentTarget.elements)}}`
+    fetch('https://api.staticforms.xyz/submit', {
+      method: 'POST',
+      body: formFields,
+      headers: { 'Content-Type': 'application/json' }
+    })
+      .then(res => res.json())
+      .then(json => {
+        console.log('wifo?', json)
+      })
+    console.log(formFields)
   })
 
   new SlimSelect({

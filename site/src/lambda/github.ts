@@ -15,6 +15,7 @@ import {
 
 
 export const handler = async (event: APIGatewayEvent): Promise<any> => {
+  console.log('tacos', event)
   if (event.httpMethod !== 'POST' || !event.body) return statusReturn(400, {})
 
   let data = {}

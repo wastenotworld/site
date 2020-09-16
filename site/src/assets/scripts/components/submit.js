@@ -65,9 +65,9 @@ export default component((node) => {
 
     const formFields = `{${encode(e.currentTarget.elements)}}`
     console.log('formsss', formFields)
-    fetch('http://localhost:34567/.netlify/functions/github', {
+    fetch('/.netlify/functions/github', {
       method: 'POST',
-      body: JSON.stringify(formFields),
+      body: formFields,
       headers: { 'Content-Type': 'application/json' }
     })
   })

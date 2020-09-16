@@ -8,6 +8,9 @@
 
 [dev]
   command = "npm run start"
+  port = 8888
+  targetPort = 8080
+  publish= "site/build"
 
 [[redirects]]
   from = "/api/*"

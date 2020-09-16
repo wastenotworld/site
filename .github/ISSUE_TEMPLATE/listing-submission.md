@@ -2,7 +2,7 @@
 name: Listing Submission
 about: Submit a new listing to Waste Not
 title: ''
-labels: ''
+labels: listing
 assignees: ''
 
 ---

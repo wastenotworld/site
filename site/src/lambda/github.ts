@@ -26,80 +26,78 @@ export const handler = async (event: APIGatewayEvent): Promise<any> => {
     return statusReturn(400, { error: 'Bad Request Body' })
   }
 
-  console.log(data)
 
-  return statusReturn(200, { body: 'success' })
-//   try {
-//     const response = await octokit.request("POST /repos/wastenotworld/site/issues", {
-//       org: "wastenotworld",
-//       repo: "site",
-//       title: "Testing",
-//       body: `
-// # New Listing Request - Spacing Test
+  try {
+    const response = await octokit.request("POST /repos/wastenotworld/site/issues", {
+      org: "wastenotworld",
+      repo: "site",
+      title: data.materialName,
+      body: `
+# New Listing Request - ${data.materialName}
 
-// Include an additional description here to clarify any of the information below
+Include an additional description here to clarify any of the information below
 
 
-// ### Material or product name
-// * * *
-// testing
+### Material or product name
+* * *
+${data.materialName}
 
-// ### Material or product URL
-// * * *
-// [testing](https://testing.com)
+### Material or product URL
+* * *
+[${data.materialName}](${data.materialURL})
 
-// ### Parent supplier name
-// * * *
-// spaghetti
+### Parent supplier name
+* * *
+${data.supplierName}
 
-// ### Parent supplier URL
-// * * *
-// [spaghetti](https://testing.com)
+### Parent supplier URL
+* * *
+[${data.supplierName}](${data.supplierURL})
 
-// ### Country
-// * * *
-// USA
+### Country
+* * *
+${data.country}
 
-// ### City
-// * * *
-// Brooklyn
+### City
+* * *
+${data.city}
 
-// ### Description
-// * * *
-// desccccription
+### Description
+* * *
+${data.description}
 
-// ### Minimums
-// * * *
-// Low Minimums
+### Minimums
+* * *
+${data.minimums}
 
-// ### Is it?
-// * * *
-// - [x] Biodegradable
-// - [ ] Compostable
-// - [x] Home Compostable
-// - [ ] Renewed Material
-// - [x] Bio Based
-// - [ ] Dissolvable
-// - [ ] Recycable
+### Is it?
+* * *
+- [${data.biodegradable === 'true' ? 'x' : ' '}] Biodegradable
+- [${data.compostable === 'true' ? 'x' : ' '}] Compostable
+- [${data.homeCompostable === 'true' ? 'x' : ' '}] Home Compostable
+- [${data.renewedMaterial === 'true' ? 'x' : ' '}] Renewed Material
+- [${data.bioBased === 'true' ? 'x' : ' '}] Bio Based
+- [${data.dissolvable === 'true' ? 'x' : ' '}] Dissolvable
+- [${data.recyclable === 'true' ? 'x' : ' '}] Recycable
 
-// ### Tags (Optional)
-// * * *
-// - [x] Customizable
-// - [ ] Claims low energy usage
-// - [ ] Range of finishes
-// - [ ] Claims closed loop
-// - [ ] Drop ship options
-// - [ ] Claims renewable natural resource
-// - [ ] Claims low water usage
-// - [x] Claims lower greenhouse emissions
-// - [ ] Claims carbon neutrality
-// - [ ] Claims zero waste
-//       `
-//     })
-//     console.log('response', response)
-//     return statusReturn(200, { body: 'success' })
-//   } catch (err) {
-//     console.log(err)
-//     return statusReturn(500, { error: err.message })
-//   }
+### Tags (Optional)
+* * *
+- [${data.customizable === 'true' ? 'x' : ' '}] Customizable
+- [${data.claimsLowEnergy === 'true' ? 'x' : ' '}] Claims low energy usage
+- [${data.rangeOfFinishes === 'true' ? 'x' : ' '}] Range of finishes
+- [${data.claimsClosed === 'true' ? 'x' : ' '}] Claims closed loop
+- [${data.dropShip === 'true' ? 'x' : ' '}] Drop ship options
+- [${data.claimsRenewable === 'true' ? 'x' : ' '}] Claims renewable natural resource
+- [${data.claimsLowWater === 'true' ? 'x' : ' '}] Claims low water usage
+- [${data.claimsLowerGreenhouse === 'true' ? 'x' : ' '}] Claims lower greenhouse emissions
+- [${data.claimsCarbon === 'true' ? 'x' : ' '}] Claims carbon neutrality
+- [${data.claimsZero === 'true' ? 'x' : ' '}] Claims zero waste
+      `
+    })
+    console.log('response', response)
+    return statusReturn(200, { body: 'success' })
+  } catch (err) {
+    console.log(err)
+    return statusReturn(500, { error: err.message })
+  }
 }

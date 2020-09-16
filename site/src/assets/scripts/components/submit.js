@@ -5,14 +5,18 @@ import SlimSelect from 'slim-select'
 function encode(data) {
   return Object.keys(data)
     .map((key) => {
-      console.log('hey key', data)
-      return `"${data[key].name}":"${data[key].value}"`
+      if (data[key].type === 'checkbox') {
+        return `"${data[key].name}":"${data[key].checked}"`
+      } else {
+        return `"${data[key].name}":"${data[key].value}"`
+      }
     })
     .join(',')
 }
 
 export default component((node) => {
   const selectMain = node.querySelector('.js-submit-view')
+  const selectMin = node.querySelector('.js-mins')
 
   const views = node.querySelectorAll('.js-view')
 
@@ -52,7 +56,20 @@ export default component((node) => {
       .then(json => {
         console.log('wifo?', json)
       })
-    console.log(formFields)
+  })
+
+  const gitHubForm = help.querySelector('form')
+
+  gitHubForm.addEventListener('submit', e => {
+    e.preventDefault()
+
+    const formFields = `{${encode(e.currentTarget.elements)}}`
+    console.log('formsss', formFields)
+    fetch('http://localhost:34567/.netlify/functions/github', {
+      method: 'POST',
+      body: JSON.stringify(formFields),
+      headers: { 'Content-Type': 'application/json' }
+    })
   })
 
   new SlimSelect({
@@ -60,6 +77,14 @@ export default component((node) => {
     showSearch: false,
     onChange: (info) => {
       showHide(info.value)
+    }
+  })
+
+  new SlimSelect({
+    select: selectMin,
+    showSearch: false,
+    onChange: (info) => {
+      console.log(info.value)
     }
   })
 })

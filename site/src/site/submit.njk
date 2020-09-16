@@ -93,7 +93,7 @@ layout: layouts/base.njk
         <div class='mb1'>
           <label>
             <span class='s18 mb05 block '>Your Email</span>
-            <input type='email' name='email' class='br x cm50 bcw ba p1' />
+            <input type='email' name='email' required class='br x cm50 bcw ba p1' />
           </label>
         </div>
         <div>
@@ -106,13 +106,13 @@ layout: layouts/base.njk
           <div class='mb1 cm50 x'>
             <label>
               <span class='s18 mb05 block '>Material or product name</span>
-              <input type='text' name='materialName' class='br x bcw ba p1' />
+              <input type='text'  name='materialName' class='br x bcw ba p1' />
             </label>
           </div>
           <div class='mb1 cm50 x'>
             <label>
               <span class='s18 mb05 block '>Material or product URL</span>
-              <input type='text' name='materialURL' class='br x bcw ba p1' />
+              <input type='text'  name='materialURL' class='br x bcw ba p1' />
             </label>
           </div>
         </div>
@@ -120,13 +120,13 @@ layout: layouts/base.njk
           <div class='mb1 cm50 x'>
             <label>
               <span class='s18 mb05 block '>Parent supplier name</span>
-              <input type='text' name='supplierName' class='br x bcw ba p1' />
+              <input type='text'  name='supplierName' class='br x bcw ba p1' />
             </label>
           </div>
           <div class='mb1 cm50 x'>
             <label>
               <span class='s18 mb05 block '>Parent supplier URL</span>
-              <input type='text' name='supplierURL' class='br x bcw ba p1' />
+              <input type='text'  name='supplierURL' class='br x bcw ba p1' />
             </label>
           </div>
         </div>
@@ -134,24 +134,24 @@ layout: layouts/base.njk
           <div class='mb1 cm50 x'>
             <label>
               <span class='s18 mb05 block '>Country</span>
-              <input type='text' name='country' class='br x bcw ba p1' />
+              <input type='text' required name='country' class='br x bcw ba p1' />
             </label>
           </div>
           <div class='mb1 cm50 x'>
             <label>
               <span class='s18 mb05 block '>City</span>
-              <input type='text' name='city' class='br x bcw ba p1' />
+              <input type='text' required name='city' class='br x bcw ba p1' />
             </label>
           </div>
         </div>
         <div class='mt05'>
-          <textarea name='description' class='bcw p1 ba br serif x' placeholder='Short paragraph describing the good or material'></textarea>
+          <textarea required name='description' class='bcw p1 ba br serif x' placeholder='Short paragraph describing the good or material'></textarea>
         </div>
 
         <div class='mt05 cm50'>
           <label>
             <span class='s18 mb05 block'>What are the minimums like?</span>
-            <select name="minimums" id="minimums" data-component='easy'>
+            <select class='js-mins' required name="minimums" id="minimums">
               <option value="low">Low Minimums</option>
               <option value="high">High Minimums</option>
               <option value="no">No Minimums</option>
@@ -163,43 +163,43 @@ layout: layouts/base.njk
           <div class='f jcb ais fw'>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='biodegradable'>
+                <input type='checkbox' name='biodegradable'>
                 <span class='s20 serif block rel'>Biodegradable</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='compostable'>
+                <input type='checkbox' name='compostable'>
                 <span class='s20 serif block rel'>Compostable</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='homeCompostable'>
+                <input type='checkbox' name='homeCompostable'>
                 <span class='s20 serif block rel'>Home Compostable</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='renewedMaterial'>
+                <input type='checkbox' name='renewedMaterial'>
                 <span class='s20 serif block rel'>Renewed Material</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='bioBased'>
+                <input type='checkbox' name='bioBased'>
                 <span class='s20 serif block rel'>Bio Based</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='dissolvable'>
+                <input type='checkbox' name='dissolvable'>
                 <span class='s20 serif block rel'>Dissolvable</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='recyclable'>
+                <input type='checkbox' name='recyclable'>
                 <span class='s20 serif block rel'>Recyclable</span>
               </label>
             </div>
@@ -211,61 +211,61 @@ layout: layouts/base.njk
           <div class='f jcb ais fw'>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='customizable'>
+                <input type='checkbox' name='customizable'>
                 <span class='s20 serif block rel'>Customizable</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='claimsLowEnergy'>
+                <input type='checkbox' name='claimsLowEnergy'>
                 <span class='s20 serif block rel'>Claims low energy usage</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='rangeOfFinishes'>
+                <input type='checkbox' name='rangeOfFinishes'>
                 <span class='s20 serif block rel'>Range of finishes</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='claimsClosed'>
+                <input type='checkbox' name='claimsClosed'>
                 <span class='s20 serif block rel'>Claims closed loop</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='dropShip'>
+                <input type='checkbox' name='dropShip'>
                 <span class='s20 serif block rel'>Drop ship options</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='claimsRenewable'>
+                <input type='checkbox' name='claimsRenewable'>
                 <span class='s20 serif block rel'>Claims renewable natural resource</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='claimsLowWater'>
+                <input type='checkbox' name='claimsLowWater'>
                 <span class='s20 serif block rel'>Claims low water usage</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='claimsLowerGreenhouse'>
+                <input type='checkbox' name='claimsLowerGreenhouse'>
                 <span class='s20 serif block rel'>Claims lower greenhouse emissions</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='claimsCarbon'>
+                <input type='checkbox' name='claimsCarbon'>
                 <span class='s20 serif block rel'>Claims carbon neutrality</span>
               </label>
             </div>
             <div class='cm50 x mt1 mb05'>
               <label class='block ba form__checkbox no-style'>
-                <input type='checkbox' value='claimsZero'>
+                <input type='checkbox' name='claimsZero'>
                 <span class='s20 serif block rel'>Claims zero waste</span>
               </label>
             </div>

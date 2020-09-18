@@ -47,6 +47,15 @@
           height: 16px;
         }
       }
+      &.strike {
+        &:before {
+          background-color: transparent;
+        }
+        svg {
+          left: -28px;
+          top: 10px;
+        }
+      }
     }
     &-versioning {
       width: 80%;

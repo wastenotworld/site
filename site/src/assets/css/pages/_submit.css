@@ -9,7 +9,7 @@
     @media (min-width: 900px) {
       width: 50%;
       max-width: 580px;
-      max-height: 800px;
+      max-height: calc(100vh - 60px);
       position: sticky;
       top: 60px;
       bottom: 0;

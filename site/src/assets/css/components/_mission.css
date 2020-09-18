@@ -56,4 +56,14 @@
       transform: translateY(0px);
     }
   }
+  &__straws {
+    position: relative;
+    overflow: hidden;
+    &-img {
+      width: 110%;
+      height: 106%;
+      left: -5%;
+      top: -3%;
+    }
+  }
 }

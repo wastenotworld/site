@@ -4,7 +4,7 @@ layout: layouts/base.njk
 ---
 
 <div class='submit f fw jcb' data-component='submit'>
-  <div class='submit__image ac p15 rel f jcc aic x'>
+  <div class='split__sticky-image ac p15 rel f jcc aic x'>
     <img class='abs x y top obj-fit left' src='/images/submit.jpg' alt='contribution guidelines' />
   </div>
   <div class='submit__text p15 al'>
@@ -18,16 +18,16 @@ layout: layouts/base.njk
     </div>
     <div class='container--m inner js-view js-tech' id='savvy'>
       <p class='serif s20 my1 py1'>Waste Not is a free website. We are run on GitHub and audited by the community. For our volunteers to fact-check, we require that you detail all the information a listing requires to submit. Before you get started:</p>
-      <form action='https://github.com'>
+      <form action='https://github.com/wastenotworld/site/issues/new/choose'>
         <div>
           <label class='block ba form__checkbox mb1 bcw p1 br'>
-            <input type='checkbox' value='guidelines'>
+            <input required type='checkbox' value='guidelines'>
             <span class='s20 serif block rel'>If this is your first contribution to the Waste Not open source repo, follow the Contribution guidelines.</span>
           </label>
         </div>
         <div>
           <label class='block ba form__checkbox mb1 bcw p1 br'>
-            <input type='checkbox' value='guidelines'>
+            <input required type='checkbox' value='guidelines'>
             <span class='s20 serif block rel'>Please check that your submission does not already exist by searching our listings or https://github.com/wastenot/wastenot/pulls.</span>
           </label>
         </div>

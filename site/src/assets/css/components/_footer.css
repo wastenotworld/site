@@ -54,6 +54,9 @@
   }
   &__description {
     max-width: 460px;
+    @media (min-width: 1000px) {
+      margin: 0 0;
+    }
   }
   &__links {
     list-style-type: none;

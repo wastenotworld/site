@@ -39,7 +39,7 @@
       </button>
     </div>
     <div>
-      <button class='rel al naked listing__source-ticket'>
+      <button class='rel al naked js-source-questionable listing__source-ticket'>
         <div class='abs p1  top left'>
           <span class='cw s28 m0 p0'>Questionable info</span><br />
           <span class='serif s16'>For validating information provided</span>
@@ -53,12 +53,35 @@
       <p class='s16 m0 p0'>Submit tickets for one issue at a time. All inquiries are pushed to GitHub and reviewed by the community.</p>
     </div>
   </div>
-  <div class='listing__source-form hidden  js-source-mistake'>
+  <div class='listing__source-form hidden js-source-mistake'>
     <form class='js-mistake-form'>
       <label>
         <p class='serif s15 bold mb05'>What item has the mistake?</p>
         <select class='br x bcw ba p1'>
+          <option value='typo'>Typo</option>
+          <option value='broken-link'>Broken Link</option>
+          <option value='incorrect-supplier'>Incorrect Supplier</option>
+          <option value='incorrect-origin'>Incorrect Origin</option>
+          <option value='qualities'>Qualities</option>
+        </select>
+      </label>
+      <label>
+        <p class='serif s15 bold mt1 mb05'>What is the correct information?</p>
+        <textarea class='br helv x bcw ba p1' placeholder='Enter text'></textarea>
+      </label>
+      <button type='submit' class='button mt1 caps'>Submit Ticket</button>
+    </form>
+  </div>
+  <div class='listing__source-form hidden js-source-questionable-info'>
+    <form class='js-mistake-form'>
+      <label>
+        <p class='serif s15 bold mb05'>What information is questionable?</p>
+        <select class='br x bcw ba p1'>
+          <option value='name'>Name</option>
+          <option value='description'>Description</option>
           <option value='quantities'>Quantities</option>
+          <option value='tags'>Quantities</option>
+          <option value='qualities'>Qualities</option>
         </select>
       </label>
       <label>

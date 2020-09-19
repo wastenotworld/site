@@ -73,6 +73,7 @@ export default component((node) => {
     .then(res => res.json())
     .then(json => {
       console.log('we did it!', json)
+      mistake.classList.add('hidden')
       thanks.classList.remove('hidden')
     })
   })
@@ -98,6 +99,7 @@ export default component((node) => {
     .then(res => res.json())
     .then(json => {
       console.log('we did it!', json)
+      questionable.classList.add('hidden')
       thanks.classList.remove('hidden')
     })
   })

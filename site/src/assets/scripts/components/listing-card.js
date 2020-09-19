@@ -50,7 +50,7 @@ export default component((node) => {
     mistake.classList.remove('hidden')
   })
 
-  const mistakeForm = node.querySelector('.js-mistake-form')
+  const mistakeForm = mistake.querySelector('form')
 
   mistakeForm.addEventListener('submit', e => {
     e.preventDefault()
@@ -76,7 +76,7 @@ export default component((node) => {
   const questionableForm = questionable.querySelector('form')
 
   questionableForm.addEventListener('submit', e => {
-    e.repventDefault()
+    e.preventDefault()
 
     const formFields = `{${encode(e.currentTarget.elements)}}`
     fetch('/.netlify/functions/github-listing', {

@@ -22,7 +22,7 @@
     <div>
       <p class='s14'>
         <span class='bold'>Submit a ticket</span><br />
-        Our listings are audited by volunteers and users like you. <a href='/learn' class='underline'>Learn more.</a>
+        <span class='regular'>Our listings are audited by volunteers and users like you. <a href='/learn' class='underline'>Learn more.</a></span>
       </p>
     </div>
   </div>
@@ -55,40 +55,55 @@
   </div>
   <div class='listing__source-form hidden js-source-mistake'>
     <form class='js-mistake-form'>
+      <input type='hidden' value='{{ listing.content.main.name  }}' name='name' class='hidden' />
       <label>
         <p class='serif s15 bold mb05'>What item has the mistake?</p>
-        <select class='br x bcw ba p1'>
-          <option value='typo'>Typo</option>
-          <option value='broken-link'>Broken Link</option>
-          <option value='incorrect-supplier'>Incorrect Supplier</option>
-          <option value='incorrect-origin'>Incorrect Origin</option>
-          <option value='qualities'>Qualities</option>
-        </select>
+        <div class='select--wrap rel'>
+          <span class=" abs right ss-arrow"><span class="arrow-down"></span></span>
+          <select name='select' class='br x bcw ba p1'>
+            <option value='typo'>Typo</option>
+            <option value='broken-link'>Broken Link</option>
+            <option value='incorrect-supplier'>Incorrect Supplier</option>
+            <option value='incorrect-origin'>Incorrect Origin</option>
+            <option value='qualities'>Qualities</option>
+          </select>
+        </div>
       </label>
       <label>
         <p class='serif s15 bold mt1 mb05'>What is the correct information?</p>
-        <textarea class='br helv x bcw ba p1' placeholder='Enter text'></textarea>
+        <textarea name='description' required class='br helv x bcw ba p1' placeholder='Enter text'></textarea>
       </label>
-      <button type='submit' class='button mt1 caps'>Submit Ticket</button>
+      <div class='f jcs aic'>
+        <button type='submit' class='button button--black cw mt1 caps'>Submit Ticket</button>
+        <button type='reset' class='button mt1 js-reset caps ml1'>Cancel</button>
+      </div>
     </form>
   </div>
   <div class='listing__source-form hidden js-source-questionable-info'>
     <form class='js-mistake-form'>
+      <input type='hidden' value='{{ listing.content.main.name  }}' name='name' class='hidden' />
       <label>
         <p class='serif s15 bold mb05'>What information is questionable?</p>
-        <select class='br x bcw ba p1'>
-          <option value='name'>Name</option>
-          <option value='description'>Description</option>
-          <option value='quantities'>Quantities</option>
-          <option value='tags'>Quantities</option>
-          <option value='qualities'>Qualities</option>
-        </select>
+        <div class='select-wrap rel'>
+
+          <span class=" abs right ss-arrow"><span class="arrow-down"></span></span>
+          <select name='select' class='br x bcw ba p1'>
+            <option value='name'>Name</option>
+            <option value='description'>Description</option>
+            <option value='quantities'>Quantities</option>
+            <option value='tags'>Tags</option>
+            <option value='qualities'>Qualities</option>
+          </select>
+        </div>
       </label>
       <label>
         <p class='serif s15 bold mt1 mb05'>What is the correct information?</p>
-        <textarea class='br helv x bcw ba p1' placeholder='Enter text'></textarea>
+        <textarea name='description' required class='br helv x bcw ba p1' placeholder='Enter text'></textarea>
       </label>
-      <button type='submit' class='button mt1 caps'>Submit Ticket</button>
+      <div class='f jcs aic'>
+        <button type='submit' class='button button--black cw mt1 caps'>Submit Ticket</button>
+        <button type='reset' class='button js-reset mt1 caps ml1'>Cancel</button>
+      </div>
     </form>
   </div>
 </div>

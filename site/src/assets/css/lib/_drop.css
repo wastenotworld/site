@@ -47,6 +47,7 @@
   /* display: none !important; */
 }
 
+.select--wrap .ss-arrow span,
 .ss-main .ss-single-selected .ss-arrow span {
   border: 0;
   padding: 0 !important;
@@ -54,6 +55,13 @@
   border-top: 5px solid black;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
+}
+
+.select--wrap .ss-arrow {
+  z-index: 20;
+  top: 50%;
+  margin-top: -2px;
+  right: 14px;
 }
 
 
@@ -94,3 +102,4 @@
 .ss-content .ss-list .ss-option {
   padding: 10px 18px;
 }
+

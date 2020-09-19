@@ -27,6 +27,20 @@ export default component((node) => {
   const mistake = node.querySelector('.js-source-mistake')
   const questionable = node.querySelector('.js-source-questionable-info')
 
+  const resets = node.querySelectorAll('.js-reset')
+
+  resets.forEach(reset => {
+    reset.addEventListener('click', () => {
+      source.classList.add('hidden')
+      mistake.classList.add('hidden')
+      questionable.classList.add('hidden')
+      node.classList.remove('source')
+      setTimeout(() => {
+        source.classList.remove('hidden')
+      }, 1000)
+    })
+  })
+
   const sourceOpen = node.querySelector('.js-source-open')
   sourceOpen.addEventListener('click', () => node.classList.toggle('source'))
 
@@ -41,19 +55,21 @@ export default component((node) => {
   mistakeForm.addEventListener('submit', e => {
     e.preventDefault()
     const formFields = `{${encode(e.currentTarget.elements)}}`
-    console.log(formFields)
-    // fetch(`/api/github`)
-    //   .then(res => res.json())
-    //   .then(json => {
-    //     console.log('hey man?', json)
-    //   })
+    fetch('/.netlify/functions/github-listing', {
+      method: 'POST',
+      body: formFields,
+      headers: { 'Content-Type': 'application/json' }
+    })
+    .then(res => res.json())
+    .then(json => {
+      console.log('we did it!')
+    })
   })
 
   const questionableTicketButton = node.querySelector('.js-source-questionable')
 
   questionableTicketButton.addEventListener('click', () => {
     source.classList.add('hidden')
-    console.log(questionable)
     questionable.classList.remove('hidden')
   })
 
@@ -63,6 +79,14 @@ export default component((node) => {
     e.repventDefault()
 
     const formFields = `{${encode(e.currentTarget.elements)}}`
-    console.log(formFields)
+    fetch('/.netlify/functions/github-listing', {
+      method: 'POST',
+      body: formFields,
+      headers: { 'Content-Type': 'application/json' }
+    })
+    .then(res => res.json())
+    .then(json => {
+      console.log('we did it!')
+    })
   })
 })

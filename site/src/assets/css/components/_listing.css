@@ -28,6 +28,14 @@
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
     }
+    &-form {
+      button {
+        min-width: auto;
+      }
+      select {
+        appearance: none;
+      }
+    }
     &-ticket {
       > div {
         margin-top: -3px;

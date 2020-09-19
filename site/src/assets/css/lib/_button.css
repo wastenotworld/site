@@ -12,6 +12,10 @@
   &--clear {
     background-color: transparent;
   }
+  &--black {
+    background-color: black;
+    color: white;
+  }
 }
 
 button.naked {

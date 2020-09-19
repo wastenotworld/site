@@ -20,6 +20,10 @@ body {
   font-weight: 600;
 }
 
+.regular {
+  font-weight: 400;
+}
+
 .subtitle {
   margin-top: 30px;
 }

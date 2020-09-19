@@ -42,8 +42,7 @@ ${data.description}
 
       `
     })
-    console.log('response', response)
-    return statusReturn(200, { body: 'success' })
+    return statusReturn(200, { body: response })
   } catch (err) {
     console.log(err)
     return statusReturn(500, { error: err.message })

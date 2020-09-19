@@ -26,6 +26,9 @@ export default component((node) => {
   const source = node.querySelector('.js-source-selection')
   const mistake = node.querySelector('.js-source-mistake')
   const questionable = node.querySelector('.js-source-questionable-info')
+  const thanks = node.querySelector('.js-thanks')
+
+  const resetAll = node.querySelector('.js-reset-all')
 
   const resets = node.querySelectorAll('.js-reset')
 
@@ -39,6 +42,13 @@ export default component((node) => {
         source.classList.remove('hidden')
       }, 1000)
     })
+  })
+
+  resetAll.addEventListener('click', () => {
+    mistake.classList.add('hidden')
+    thanks.classList.add('hidden')
+    questionable.classList.add('hidden')
+    source.classList.remove('hidden')
   })
 
   const sourceOpen = node.querySelector('.js-source-open')
@@ -62,7 +72,8 @@ export default component((node) => {
     })
     .then(res => res.json())
     .then(json => {
-      console.log('we did it!')
+      console.log('we did it!', json)
+      thanks.classList.remove('hidden')
     })
   })
 
@@ -86,7 +97,8 @@ export default component((node) => {
     })
     .then(res => res.json())
     .then(json => {
-      console.log('we did it!')
+      console.log('we did it!', json)
+      thanks.classList.remove('hidden')
     })
   })
 })

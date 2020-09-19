@@ -16,6 +16,14 @@
     &-mobile {
       display: none;
     }
+    &-thanks {
+      margin-top: 3rem;
+    }
+    &-success {
+      &-img{
+        padding: 2rem;
+      }
+    }
     &-desktop {
       order: 4;
       right: 14px;

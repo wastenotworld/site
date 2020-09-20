@@ -20,6 +20,12 @@
           text-align: left;
         }
       }
+      .spin {
+        animation: spin 10s linear infinite;
+      }
+      .no-spin {
+        left: 0px;
+      }
     }
     @media (min-width: 1100px) {
       width: calc(100% - 600px);
@@ -36,3 +42,5 @@
     }
   }
 }
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

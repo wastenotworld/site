@@ -1,4 +1,6 @@
 .category__filters {
+  position: sticky;
+  top: 90px;
   &-group {
     fieldset {
       border: none;

@@ -1,4 +1,5 @@
 import { component } from 'picoapp'
+import astrochimp from 'astrochimp'
 
 export default component((node) => {
   const creditOpen = node.querySelector('.js-credit-open')
@@ -12,8 +13,7 @@ export default component((node) => {
   form.addEventListener('submit', e => { 
     e.preventDefault()
     const { email } = e.currentTarget.elements
-  })
-  astrochimp('blewp', {
+    astrochimp('blewp', {
       EMAIL: email.value
     }, (err, data) => {
       console.log('success?', err, data)
@@ -21,4 +21,6 @@ export default component((node) => {
         setSuccess(true)
       }
     })
+  })
+
 })

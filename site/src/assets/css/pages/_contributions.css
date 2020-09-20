@@ -40,6 +40,29 @@
         width: 90%;
       }
     }
+    .contributions__toggle-content {
+      max-height: 0px;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    &-title {
+      background-color: transparent;
+      border: none;
+    }
+    .ss-arrow {
+      transform: rotate(180deg) translateY(16px);
+    }
+    &.active {
+      .ss-arrow {
+        transform: rotate(0deg) translateY(6px);
+      }
+      .contributions__toggle-content {
+        max-height: 2000px;
+        opacity: 1;
+        overflow: visible;
+      }
+    }
   }
 }
 

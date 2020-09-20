@@ -48,13 +48,19 @@
 }
 
 .select--wrap .ss-arrow span,
-.ss-main .ss-single-selected .ss-arrow span {
+.ss-main .ss-single-selected .ss-arrow span,
+.contributions__toggle-title .ss-arrow span {
   border: 0;
   padding: 0 !important;
   transform: none !important;
   border-top: 5px solid black;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
+}
+
+.contributions__toggle-title .ss-arrow {
+  top: 50%;
+  margin-top: -2px;
 }
 
 .select--wrap .ss-arrow {

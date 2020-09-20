@@ -7,6 +7,7 @@ import pop from './components/pop.js'
 import header from './components/header.js'
 import criteria from './components/criteria.js'
 import submit from './components/submit.js'
+import contributions from './components/contributions.js'
 import filters from './components/filters.js'
 import listingCard from './components/listing-card.js'
 import screensaver from './components/screensaver.js'
@@ -23,6 +24,7 @@ const components = {
   criteria,
   listingCard,
   submit,
+  contributions,
   footer,
   screensaver,
   filters,

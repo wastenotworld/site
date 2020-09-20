@@ -1,6 +1,6 @@
 import { component } from 'picoapp'
 
-import { subscribe } from "klaviyo-subscribe"
+import astrochimp from 'astrochimp'
 
 export default component((node) => {
   const form = node.querySelector('form')
@@ -11,13 +11,16 @@ export default component((node) => {
     const email = form.elements.email
 
     console.log(email.value)
-
-    subscribe("Yf9WmD", email.value, {})
-      .then(response => {
+    astrochimp('https://world.us2.list-manage.com/subscribe/post?u=8e8fe8709d1e629cb0e653519&amp;id=257c47747d', {
+      EMAIL: email.value
+    }, (err, data) => {
+      console.log('success?', err, data)
+      if (!err) {
+      
         form.reset()
         form.classList.add('hidden')
         success.classList.remove('hidden')
-        console.log('response', response)
-      })
+      }
+    })
   })
 })

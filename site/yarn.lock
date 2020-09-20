@@ -2521,6 +2521,11 @@ ast-module-types@^2.3.1, ast-module-types@^2.3.2, ast-module-types@^2.4.0, ast-m
   resolved "https://registry.yarnpkg.com/ast-module-types/-/ast-module-types-2.6.0.tgz#f9f367fd273bbe01e52f2c51b5f46b65801d5d7f"
   integrity sha512-zXSoVaMrf2R+r+ISid5/9a8SXm1LLdkhHzh6pSRhj9jklzruOOl1hva1YmFT33wAstg/f9ZndJAlq1BSrFLSGA==
 
+astrochimp@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/astrochimp/-/astrochimp-1.0.1.tgz#46d5e1543476d315184e4a38540f47bf6e9fcf75"
+  integrity sha512-kwKFY7DM98tn0mZOGhDHn9sqSZRbp0g2e8BhotfYuiOgGVq60Y2DlF8D8xZtstTRD7TTBi2LXZ0skkhmqn5vmA==
+
 async-each-series@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/async-each-series/-/async-each-series-0.1.1.tgz#7617c1917401fd8ca4a28aadce3dbae98afeb432"

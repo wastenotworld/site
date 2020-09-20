@@ -66,8 +66,10 @@
         padding: 0.5rem;
       }
     }
-    border: 1px solid black;
-    border-radius: 6px;
+    @media (min-width: 1000px) {
+      border: 1px solid black;
+      border-radius: 6px;
+    }
     &-inner {
       border-bottom: 1px solid black;
       &:first-child {
@@ -76,6 +78,7 @@
       }
       &:last-child {
         border: none;
+        padding-bottom: 1.4rem;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
       }

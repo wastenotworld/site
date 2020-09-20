@@ -5,6 +5,19 @@ import { router } from '../index.js'
 
 export default component((node) => {
   const listingList = document.querySelector('.js-category-list')
+  const toggle = node.querySelector('.js-filter-toggle')
+
+  toggle.addEventListener('click', e => {
+    e.preventDefault()
+    node.classList.toggle('show')
+    if (node.classList.contains('show')) {
+      toggle.innerHTML = `Refine results`
+    } else {
+      toggle.innerHTML = `Filter`
+    }
+  })
+
+
   let countries = []
   const listings = listingList.querySelectorAll('.js-card')
   const empty = document.querySelector('.js-empty')

@@ -95,6 +95,9 @@ module.exports = function(config) {
           case 'high':
             ret = new nunjucksEngine.runtime.SafeString('High miniumums')
             break;
+          case 'inquire':
+            ret = new nunjucksEngine.runtime.SafeString('Inquire')
+            break;
           default:
             ret = new nunjucksEngine.runtime.SafeString('Low Miniumums')
             break;

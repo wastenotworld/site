@@ -7,6 +7,20 @@ body, html {
   background-color: #EBE5DE;
 }
 
+.main {
+  overflow: hidden;
+  position: relative;
+  background-color: #EBE5DE;
+  z-index: 10;
+  @media (min-width: 1200px) {
+    margin-bottom: 768px;
+    border-bottom: 1px solid black;
+  }
+  @media (min-width: 1500px) {
+    margin-bottom: 778px;
+  }
+}
+
 ::-moz-selection {
   /* background-color: $text-color; */
 }

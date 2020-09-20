@@ -1,6 +1,13 @@
 .footer {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  @media (min-width: 1200px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: none;
+  }
   &__credits {
     opacity: 0;
     transition: all 0.3s ease-in-out;
@@ -50,7 +57,12 @@
     }
   }
   &__logo {
-    max-width: 522px;
+    > div {
+      max-width: 522px;
+      @media (min-width: 800px) {
+        margin: 0;
+      }
+    }
   }
   &__description {
     max-width: 460px;
@@ -73,8 +85,10 @@
   }
   .newsletter {
     border-top: 1px solid black;
+    margin: 0 auto;
     @media (min-width: 800px) {
       border-top: 0;
+      margin: 0;
     }
     @media (min-width: 1400px) {
       width: 40%;

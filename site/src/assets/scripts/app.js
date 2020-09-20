@@ -4,6 +4,7 @@ import image from './lib/image.js'
 import form from './lib/form.js'
 import footer from './components/footer.js'
 import pop from './components/pop.js'
+import bag from './components/bag.js'
 import header from './components/header.js'
 import criteria from './components/criteria.js'
 import submit from './components/submit.js'
@@ -21,6 +22,7 @@ const components = {
   image,
   pop,
   header,
+  bag,
   criteria,
   listingCard,
   submit,

@@ -8,7 +8,6 @@ body, html {
 }
 
 .main {
-  overflow: hidden;
   position: relative;
   background-color: #EBE5DE;
   z-index: 10;

@@ -42,49 +42,50 @@ data: index
     <img class='block x' data-src='/images/no-thanks.jpg' data-component='image' alt='no thanks to plastic' />
   </div>
 </div>
-
-<div class='beliefs bt bcw'>
-  <div class='outer p1 ac bb'>
-    <h3 class='s40'>The beliefs we're built on</h3>
-  </div>
-  <div class='f jcb aist fw'>
-    <div class='x c33 al p15 bb beliefs__single'>
-      <div class='mxa'>
-        <img data-component='image' data-src='/images/litte-steps.png' alt='little steps' />
-        <p class='serif'>Being truly zero waste is costly and difficult. We believe in hatching a big plan, but taking immediate little steps as you can: right now. One switch can make a world of difference.</p>
-      </div>
+<div class='oh'>
+  <div class='beliefs bt bcw'>
+    <div class='outer p1 ac bb'>
+      <h3 class='s40'>The beliefs we're built on</h3>
     </div>
-    <div class='x c33 al p15 bb beliefs__single'>
-      <div class='mxa'>
-        <img data-component='image' data-src='/images/open-source.png' alt='open source' />
-        <p class='serif'>Our entire repository is on GitHub. You can learn from it, add new features, or help us audit and approve listings. Not on GitHub? You can still help: click the Open Source symbol on listings to report an issue –– we’ll send it there.</p>
-      </div>
-    </div>
-    <div class='x c33 al p15 bb beliefs__single'>
-      <div class='mxa'>
-        <img data-component='image' data-src='/images/waste-not.png' alt='open source' />
-        <p class='serif'>The end goal is to empower brands and consumers alike to waste not and want better. None of us are perfect. All of us can be better. Our planet demands a better supply, and Waste Not is a small step in making it easier.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class='h__listings'>
-  <div class='outer p1'>
-    <div class='container container--l rel ac'>
-      <h5 class='s20 caps serif'>!! Just Added !!</h5>
-      <h3 class='s40 mxa h__listings-rotate'>Sustainability is in the budget</h3>
-      <img src='/images/sun.webp' alt='sun' class='abs z1 h__listings-sun top right' />
-    </div>
-    <div class='container--l mxa'>
-      {%- for listing in homeListings -%}
-        <div class='row ac x'>
-          {% include 'listing-card.njk' %}
+    <div class='f jcb aist fw'>
+      <div class='x c33 al p15 bb beliefs__single'>
+        <div class='mxa'>
+          <img data-component='image' data-src='/images/litte-steps.png' alt='little steps' />
+          <p class='serif'>Being truly zero waste is costly and difficult. We believe in hatching a big plan, but taking immediate little steps as you can: right now. One switch can make a world of difference.</p>
         </div>
-      {%- endfor -%}
+      </div>
+      <div class='x c33 al p15 bb beliefs__single'>
+        <div class='mxa'>
+          <img data-component='image' data-src='/images/open-source.png' alt='open source' />
+          <p class='serif'>Our entire repository is on GitHub. You can learn from it, add new features, or help us audit and approve listings. Not on GitHub? You can still help: click the Open Source symbol on listings to report an issue –– we’ll send it there.</p>
+        </div>
+      </div>
+      <div class='x c33 al p15 bb beliefs__single'>
+        <div class='mxa'>
+          <img data-component='image' data-src='/images/waste-not.png' alt='open source' />
+          <p class='serif'>The end goal is to empower brands and consumers alike to waste not and want better. None of us are perfect. All of us can be better. Our planet demands a better supply, and Waste Not is a small step in making it easier.</p>
+        </div>
+      </div>
     </div>
-    <div class='container--l mxa p15'>
-      <a href='/listings' class='button caps'>!! Find Clean Connections !!</a>
+  </div>
+
+  <div class='h__listings'>
+    <div class='outer p1'>
+      <div class='container container--l rel ac'>
+        <h5 class='s20 caps serif'>!! Just Added !!</h5>
+        <h3 class='s40 mxa h__listings-rotate'>Sustainability is in the budget</h3>
+        <img src='/images/sun.webp' alt='sun' class='abs z1 h__listings-sun top right' />
+      </div>
+      <div class='container--l mxa'>
+        {%- for listing in homeListings -%}
+          <div class='row ac x'>
+            {% include 'listing-card.njk' %}
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class='container--l mxa p15'>
+        <a href='/listings' class='button caps'>!! Find Clean Connections !!</a>
+      </div>
     </div>
   </div>
 </div>

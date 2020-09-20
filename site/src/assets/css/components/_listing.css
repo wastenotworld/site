@@ -149,6 +149,14 @@
     }
     @media (min-width: 1000px) {
       max-width: 940px;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+      transition-delay: 0.3s;
+      transform: translateY(10px);
+      &.is-visible {
+        opacity: 1;
+        transform: translateY(0px);
+      }
     }
     &-country {
       padding-left: 1rem;

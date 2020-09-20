@@ -1,4 +1,5 @@
 import { component } from 'picoapp'
+import vsbl from 'vsbl'
 
 function encode(data) {
   return Object.keys(data)
@@ -22,6 +23,11 @@ export default component((node) => {
       }
     })
   })
+
+  const vs = vsbl(node)(() => {
+    node.classList.add('is-visible')
+  })
+  vs.update()
 
   const source = node.querySelector('.js-source-selection')
   const mistake = node.querySelector('.js-source-mistake')

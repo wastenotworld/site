@@ -109,3 +109,11 @@
   padding: 10px 18px;
 }
 
+.ss-main .ss-multi-selected {
+  background-color: transparent;
+  border: 0;
+  color: black;
+  .ss-disabled {
+    color: black !important;
+  }
+}

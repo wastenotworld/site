@@ -117,3 +117,8 @@
     color: black !important;
   }
 }
+
+.ss-main .ss-multi-selected .ss-values .ss-value {
+  background-color: #EBE5DE;
+  color: black;
+}

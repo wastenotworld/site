@@ -94,7 +94,7 @@ a {
   }
   &:focus {
     outline: none;
-    &:before {
+    /* &:before {
       content: '';
       width: calc(100% + 8px);
       height: calc(100% + 6px);
@@ -102,7 +102,7 @@ a {
       top: -3px;
       left: -4px;
       border: 2px dashed var(--litegreen);
-    }
+    } */
   }
 }
 

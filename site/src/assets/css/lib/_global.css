@@ -85,6 +85,41 @@ hr {
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
+.text__animate {
+  h2, p, li, .text__animate-block, img {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(10px);
+  }
+  p {
+    transition-delay: 0.2s;
+  }
+  li {
+    transition-delay: 0.2s;
+    &:nth-child(1) {
+      transition-delay: 0.4s;
+    }
+    &:nth-child(2) {
+      transition-delay: 0.6s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.8s;
+    }
+    &:nth-child(4) {
+      transition-delay: 1s;
+    }
+  }
+  img {
+    transition-delay: 0.3s;
+  }
+  &.show {
+    h2, p, li, .text__animate-block, img {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+}
+
 /* .arrow-helper {
   &:after {
     border-top: 5px solid black;

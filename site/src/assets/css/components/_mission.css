@@ -109,7 +109,7 @@
   }
   &__hide-mobile {
     display: none;
-    opacity: 0;
+    opacity: 0 !important;
     @media (min-width: 800px) {
       display: block;
     }

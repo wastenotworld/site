@@ -5,6 +5,7 @@ import form from './lib/form.js'
 import footer from './components/footer.js'
 import hero from './components/hero.js'
 import pop from './components/pop.js'
+import textAnimate from './components/text-animate.js'
 import bag from './components/bag.js'
 import listings from './components/listings.js'
 import header from './components/header.js'
@@ -25,6 +26,7 @@ const components = {
   pop,
   header,
   bag,
+  textAnimate,
   hero,
   listings,
   criteria,

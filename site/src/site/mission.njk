@@ -64,13 +64,13 @@ layout: layouts/base.njk
 
     <div class='c50 split__text f jcc ais rel p1 pm2 pym al'>
       <div class='split__text-inner rel mxa'>
-        <div class='mission__guarantee abs right p15 top'>
-          <button class='button caps button--clear js-guarentee'>
+        <div class='mission__guarantee-button desktop abs right p15 top'>
+          <button class='button caps button--clear js-guarantee'>
             <span>What we can't Guarantee</span>
           </button>
         </div>
-        <h2 class='mb1'>&nbsp;</h2>
-        <ul class='pt1 mt1'>
+        <h2 class='mb1 mission__hide-mobile'>Meet our criteria</h2>
+        <ul class='pt1 mt1 mission__no-top-mobile'>
           <li class='strike'>
             <svg class='abs' width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99004 0C12.4134 0 16 3.58655 16 7.99004C16 12.4134 12.4134 16 7.99004 16C3.58655 16 0 12.4134 0 7.99004C0 3.58655 3.58655 0 7.99004 0ZM3.84558 4.54296L4.54296 3.84558L7.99004 7.29265L11.457 3.84558L12.1544 4.54296L8.70735 7.99004L12.1544 11.457L11.457 12.1544L7.99004 8.70735L4.54296 12.1544L3.84558 11.457L7.29265 7.99004L3.84558 4.54296Z" fill="black"/>
@@ -100,11 +100,24 @@ layout: layouts/base.njk
             <p>We do our best to research a product’s resources, lifecycle, manufacturing impact and make sure that alternative materials are not just alternative: but better. This isn’t easy work and we’re always auditing and improving.</p>
           </li>
         </ul>
+
+        <div class='mission__guarantee-button mobile x ac p15 top'>
+          <button class='button caps button--clear js-guarantee'>
+            <span>What we can't Guarantee</span>
+          </button>
+        </div>
         <p class='serif'>Sources: <a href='' class='cg underline'>1</a>, <a href='' class='cg underline'>2</a></p>
       </div>
     </div>
   </div>
-  <div class='fix bottom mission__guarentee x bcg'>
+  <div class='fix bottom mission__guarantee x bcg'>
+    <div class='abs right top m1 mission__guarantee-close'>
+      <button class='js-close-guarantee p1'>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
     <div class='f al jcb ais p15 mxa x cw fw'>
       <div class='x c30'>
         <p class='serif s28'>
@@ -113,7 +126,7 @@ layout: layouts/base.njk
       </div>
       <div class='c60 f jcb fw ais'>
         <div class='x c50'>
-          <ul class='my1'>
+          <ul class='mt1'>
             <li class='s28'>Zero waste</li>
             <li class='s28'>Low emissions</li>
             <li class='s28'>Renewable energy</li>
@@ -121,7 +134,7 @@ layout: layouts/base.njk
           </ul>
         </div>
         <div class='x c50'>
-          <ul class='my1'>
+          <ul class='mb1'>
             <li class='s28'>Carbon neutrality</li>
             <li class='s28'>Low water usage</li>
             <li class='s28'>Closed loop</li>

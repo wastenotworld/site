@@ -73,6 +73,18 @@ hr {
   background-color: black;
 }
 
+.icon {
+  .spin {
+    animation: spin 10s linear infinite;
+  }
+  .no-spin {
+    left: 0px;
+  }
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
 /* .arrow-helper {
   &:after {
     border-top: 5px solid black;

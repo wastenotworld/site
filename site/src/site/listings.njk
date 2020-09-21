@@ -4,8 +4,8 @@ layout: layouts/base.njk
 ---
 
 <div class='listings__index '>
-  <div class='container--xl x mxa f jcb aic fw'>
-    <div class='x al listings__block mxa'>
+  <div class='container--xl listings__index-wrapper mxa f jcb  x fw'>
+    <div class='x al listings__block'>
       {% for parent in parents %}
         <div class='listings__index-header px1 py05 bcw bb'>
           <span class='block bold s16'>
@@ -25,7 +25,7 @@ layout: layouts/base.njk
         {% endfor %}
       {% endfor %}
     </div>
-    <div class='listings__world mxa f jcb aic rel p1 al'>
+    <div class='listings__world mxa f jcb aic p1 al'>
       <div class='listings__world-text'>
         <p class='serif'>We’re a free website powered by x, y, and the community. Submissions and maintenance run on x. <a class='underline' href='/contribution-guidelines'>Learn more</a>.</p>
       </div>

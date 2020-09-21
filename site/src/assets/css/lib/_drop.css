@@ -82,8 +82,10 @@
 .ss-content {
   border: 0;
   z-index: 10;
+  background-color: transparent;
   .submit & {
     max-width: 560px;
+    background-color: white;
   }
   .ss-list {
     @media (min-width: 800px) {
@@ -91,6 +93,7 @@
       .category__header-links & {
         width: calc(100% + 30px);
         left: -15px;
+        top: 2px;
         position: relative;
       }
     }

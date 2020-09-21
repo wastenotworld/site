@@ -35,6 +35,12 @@
     }
   }
   &__block {
+    a:last-child {
+      border-bottom: none;
+      @media (min-width: 800px) {
+        border-bottom: 1px solid black;
+      }
+    }
     @media screen and (min-width: 800px) {
       border-top: 1px solid black;
       border-right: 1px solid black;
@@ -86,10 +92,19 @@
         }
       }
     }
+    position: sticky;
+    align-self: flex-end;
+    width: 100%;
+    max-width: 100%;
+    border-top: 1px solid black;
+    background-color: var(--white);
+    bottom: 0;
     @media (min-width: 800px) {
+      background-color: transparent;
+      border: none;
       position: sticky;
       align-self: flex-end;
-      bottom: 120px;
+      bottom: 160px;
       width: 270px;
       margin-right: 0;
       &-text {

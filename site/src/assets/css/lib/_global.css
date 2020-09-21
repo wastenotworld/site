@@ -11,11 +11,8 @@ body, html {
   position: relative;
   background-color: #EBE5DE;
   z-index: 10;
-  @media (min-width: 1200px) {
-    margin-bottom: 768px;
+  @media (min-width: 1400px) and (min-height: 800px) {
     border-bottom: 1px solid black;
-  }
-  @media (min-width: 1500px) {
     margin-bottom: 778px;
   }
 }

@@ -1,7 +1,7 @@
 .footer {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  @media (min-width: 1200px) {
+  @media (min-width: 1400px) and (min-height: 800px) {
     position: fixed;
     bottom: 0;
     left: 0;

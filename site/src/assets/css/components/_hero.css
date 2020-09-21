@@ -18,4 +18,21 @@
       padding-top: 100px;
     }
   }
+  h1, p, .ss-main  {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  p {
+    transition-delay: 0.2s;
+  }
+  .ss-main {
+    transition-delay: 0.4s;
+  }
+  &.is-visible {
+    h1, p, .ss-main {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 }

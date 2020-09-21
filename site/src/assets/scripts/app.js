@@ -3,6 +3,7 @@ import { picoapp } from 'picoapp'
 import image from './lib/image.js'
 import form from './lib/form.js'
 import footer from './components/footer.js'
+import hero from './components/hero.js'
 import pop from './components/pop.js'
 import bag from './components/bag.js'
 import header from './components/header.js'
@@ -23,6 +24,7 @@ const components = {
   pop,
   header,
   bag,
+  hero,
   criteria,
   listingCard,
   submit,

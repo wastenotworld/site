@@ -49,6 +49,27 @@
         border-bottom: none;
       }
     }
+    &-images {
+      overflow: hidden;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      height: 0;
+      padding-bottom: 40%;
+      img {
+        object-fit: cover;
+        opacity: 0;
+        width: 104%;
+        left: -2%;
+        height: 104%;
+        top: -2%;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        &.active {
+          opacity: 1;
+          z-index: 10;
+        }
+      }
+    }
   }
   &__nav {
     &-dots {

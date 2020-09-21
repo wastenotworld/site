@@ -15,4 +15,16 @@ export default component((node) => {
       mobileHeader.classList.toggle('open')
     })
   })
+
+  const mobileImageDom = node.querySelectorAll('.js-mobile-images img')
+  let currentIndex = 1
+  setInterval(() => {
+    mobileImageDom.forEach(img => img.classList.remove('active'))
+    mobileImageDom[currentIndex].classList.add('active')
+    if (currentIndex === mobileImageDom.length - 1) {
+      currentIndex = 0
+    } else {
+      currentIndex++
+    }
+  }, 2000)
 })

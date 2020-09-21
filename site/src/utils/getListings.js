@@ -14,7 +14,7 @@ function generateListing (listing) {
 
 async function getListings (limit) {
   const limiter = limit ? `[0..${limit}]` : ''
-  const filter = groq`*[_type == "listing"]${limiter} {
+  const filter = groq`*[_type == "listing"] | order(_updatedAt desc) ${limiter} {
     ...,
     content {
       ...,

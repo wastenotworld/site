@@ -84,7 +84,6 @@ hr {
 
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-
 .text__animate {
   h2, p, li, .text__animate-block, img {
     opacity: 0;

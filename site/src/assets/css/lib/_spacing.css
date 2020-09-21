@@ -8,6 +8,11 @@
   }
 }
 
+.py3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pym {
   @media (min-width: 800px) {
     padding-top: 4rem;
@@ -36,3 +41,4 @@
     margin-bottom: 2rem;
   }
 }
+

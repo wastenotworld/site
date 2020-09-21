@@ -21,3 +21,15 @@
     border-bottom: 1px solid black;
   }
 }
+
+.bbm800 {
+  @media screen and (max-width: 799px) {
+    border-bottom: 1px solid black;
+  }
+}
+
+.btm800 {
+  @media screen and (max-width: 799px) {
+    border-top: 1px solid black;
+  }
+}

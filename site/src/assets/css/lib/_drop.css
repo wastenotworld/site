@@ -87,11 +87,17 @@
     max-width: 560px;
     background-color: white;
   }
+  .category__filters-group & {
+    background-color: white;
+  }
   .ss-list {
     @media (min-width: 800px) {
       max-height: 340px;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
       .category__header-links & {
         width: calc(100% + 30px);
+        max-height: 70vh;
         left: -15px;
         top: 2px;
         position: relative;
@@ -124,4 +130,24 @@
 .ss-main .ss-multi-selected .ss-values .ss-value {
   background-color: #EBE5DE;
   color: black;
+}
+
+.category__filters-group {
+  .ss-open-below {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    border-bottom: 0;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-top: 1rem;
+  }
+  .ss-content .ss-list .ss-option {
+    padding: 6px 8px;
+    border-bottom: 0px;
+    font-weight: 600;
+  }
+}
+.ss-content .ss-list .ss-option.ss-highlighted, .ss-content .ss-list .ss-option:hover {
+  background-color: var(--litegreen);
 }

@@ -73,12 +73,17 @@
       @media (min-width: 800px) {
         position: absolute;
         width: 200px;
-        top: 130px;
+        top: auto;
+        bottom: -150px;
         right: 0;
       }
-      @media (min-width: 1100px) {
-        /* right: -50px; */
-        top: 130px;
+    }
+    &-text {
+      p {
+        display: none;
+        &.active {
+          display: block;
+        }
       }
     }
     @media (min-width: 800px) {

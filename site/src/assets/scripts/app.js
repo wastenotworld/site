@@ -6,6 +6,7 @@ import footer from './components/footer.js'
 import hero from './components/hero.js'
 import pop from './components/pop.js'
 import bag from './components/bag.js'
+import listings from './components/listings.js'
 import header from './components/header.js'
 import criteria from './components/criteria.js'
 import submit from './components/submit.js'
@@ -25,6 +26,7 @@ const components = {
   header,
   bag,
   hero,
+  listings,
   criteria,
   listingCard,
   submit,

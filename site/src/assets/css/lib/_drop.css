@@ -197,6 +197,10 @@ select {
       /* padding: 0 14px; */
     }
   }
+  .ss-content {
+    width: calc(100% + 2px);
+    left: -1px;
+  }
   .ss-content.ss-open {
     width: calc(100% + 2px);
     left: -1px;

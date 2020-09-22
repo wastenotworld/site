@@ -1,10 +1,12 @@
 .beliefs {
   &__single {
-    img {
+    img, svg {
       max-height: 80px;
+      height: 80px;
       width: auto;
       margin-bottom: 1rem;
       @media (min-width: 800px) {
+        height: 100px;
         max-height: 100px;
       }
     }

@@ -5,6 +5,8 @@
   &__image {
     object-fit: cover;
     object-position: center center;
+    width: 104%;
+    left: -2%;
   }
   &__inner {
     padding-top: 80px;

@@ -72,7 +72,10 @@
       padding: 2rem 2rem 0.6rem;
     }
     li {
-      padding: 0.4rem 0;
+      padding: 0.1rem 0;
+      @media (min-width: 800px) {
+        padding: 0.4rem 0;
+      }
     }
     .open & {
       opacity: 1;

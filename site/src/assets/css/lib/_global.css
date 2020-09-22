@@ -75,6 +75,7 @@ hr {
     animation: spin 10s linear infinite;
   }
   .no-spin {
+    top: 0px;
     left: 0px;
   }
 }

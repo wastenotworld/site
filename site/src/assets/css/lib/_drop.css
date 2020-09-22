@@ -6,7 +6,10 @@
   border-radius: 5px;
   overflow: hidden;
   /* margin: 0 auto; */
-  font-size: 20px;
+  font-size: 16px;
+  @media (min-width: 800px) {
+    font-size: 20px;
+  }
   height: auto;
   min-height: 70px;
   .category__header-links & {
@@ -23,6 +26,15 @@
     }
   }
 }
+
+.ss-content {
+  font-size: 16px;
+}
+
+select {
+  font-size: 16px !important;
+}
+
 .ss-option {
   color: black;
 }
@@ -91,6 +103,14 @@
     background-color: white;
   }
   .ss-list {
+
+    .category__header-links & {
+      max-height: 60vh;
+      width: calc(100% + 2rem);
+      left: -1rem;
+      position: relative;
+      top: 2px;
+    }
     @media (min-width: 800px) {
       max-height: 340px;
       border-bottom-right-radius: 6px;
@@ -100,7 +120,6 @@
         max-height: 70vh;
         left: -15px;
         top: 2px;
-        position: relative;
       }
     }
   }

@@ -100,7 +100,7 @@ select {
     background-color: white;
   }
   .category__filters-group & {
-    background-color: white;
+    background-color: var(--white);
   }
   .ss-list {
 
@@ -110,6 +110,7 @@ select {
       left: -1rem;
       position: relative;
       top: 2px;
+
     }
     @media (min-width: 800px) {
       max-height: 340px;
@@ -151,20 +152,57 @@ select {
   color: black;
 }
 
+.brad {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
 .category__filters-group {
   .ss-open-below {
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--white);
+    /* border: 1px solid black; */
     border-radius: 6px;
     border-bottom: 0;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    /* width: calc(100% + 1rem); */
+    position: relative;
+    /* left: -0.5rem; */
   }
   .ss-content .ss-list .ss-option {
-    padding: 6px 8px;
-    border-bottom: 0px;
-    font-weight: 600;
+    padding: 6px 14px;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    /* font-weight: 600; */
+    &:first-child {
+      border-top: 1px solid black;
+    }
+    &:last-child {
+      margin-bottom: 18px;
+    }
+  }
+  .ss-main {
+    padding-left: 12px;
+  }
+
+  .ss-main .ss-multi-selected .ss-values .ss-disabled {
+    /* padding: 0 14px; */
+    position: relative;
+    /* top: -6px; */
+    left: -8px;
+    .ss-open-below & {
+      padding-bottom: 0.6rem;
+      /* top: -6px; */
+      /* padding: 0 14px; */
+    }
+  }
+  .ss-content.ss-open {
+    width: calc(100% + 2px);
+    left: -1px;
+    .ss-list {
+      padding-top: 14px;
+    }
   }
 }
 .ss-content .ss-list .ss-option.ss-highlighted, .ss-content .ss-list .ss-option:hover {

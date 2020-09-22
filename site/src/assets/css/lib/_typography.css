@@ -72,6 +72,9 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 28px;
+  font-weight:500;
+  line-height:1.2;
+  letter-spacing:-.01em;
   @media (min-width: 800px) {
     font-size: 40px;
   }
@@ -142,7 +145,7 @@ a {
 .s18 {
   @media (min-width: 800px) {
     font-size: 18px;
-    line-height: 120%;
+    line-height: 130%;
   }
 }
 
@@ -161,6 +164,7 @@ a {
 .s24 {
   font-size: 18px;
   line-height: 28px;
+  letter-spacing: -.01em;
   @media (min-width: 800px) {
     font-size: 24px;
     line-height: 36px;
@@ -190,6 +194,7 @@ a {
 .s32 {
   font-size: 32px;
   line-height: 1.4;
+  font-weight: 500;
 }
 
 .s40 {

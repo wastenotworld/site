@@ -90,16 +90,16 @@ module.exports = function(config) {
         var ret
         switch (myStringArg) {
           case 'mixed':
-            ret = new nunjucksEngine.runtime.SafeString('Mixed miniumums')
+            ret = new nunjucksEngine.runtime.SafeString('Mixed minimums')
             break;
           case 'high':
-            ret = new nunjucksEngine.runtime.SafeString('High miniumums')
+            ret = new nunjucksEngine.runtime.SafeString('High minimums')
             break;
           case 'inquire':
             ret = new nunjucksEngine.runtime.SafeString('Inquire')
             break;
           default:
-            ret = new nunjucksEngine.runtime.SafeString('Low Miniumums')
+            ret = new nunjucksEngine.runtime.SafeString('Low minimums')
             break;
           
         }

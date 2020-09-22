@@ -7,7 +7,8 @@ export default {
   ],
   options: {
     list: [
-      { value: 'biodegredable', title: 'Biodegredable' },
+      { value: 'biodegredable', title: 'BAD FIX' },
+      { value: 'biodegradable', title: 'Biodegradable' },
       { value: 'compostable', title: 'Compostable' },
       { value: 'home-compostable', title: 'Home Compostable' },
       { value: 'renewed-material', title: 'Renewed Material' },

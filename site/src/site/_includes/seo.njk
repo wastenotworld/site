@@ -1,13 +1,13 @@
 
-<meta name="description"  content="{{ description or "Sustainable suppliers for packaging, fashion, interiors, restaurants and more. Clean up your supply chain." }}">
+<meta name="description" content="{{ renderData.description or "Sustainable suppliers for packaging, fashion, interiors, restaurants and more. Clean up your supply chain." }}">
 <meta property='og:locale' content='en_US' />
-<meta property='og:image' content='https://wastenot.world/images/opengraph.jpg' />
+<meta property='og:image' content='{{ renderData.image or "https://wastenot.world/images/opengraph.jpg"}}' />
 <meta property='og:title' content='{% if renderData.title %}{{renderData.title}} - {% endif %}Waste Not' />
 <meta property='og:url' content='https://wastenot.world/{{ slug or ""}}{{ renderData.slug or ""}}' />
 <meta property='og:site_name' content='Waste Not' />
-<meta property='og:description' content='Sustainable suppliers for packaging, fashion, interiors, restaurants and more. Clean up your supply chain.' />
+<meta property='og:description' content='{{ renderData.description or "Sustainable suppliers for packaging, fashion, interiors, restaurants and more. Clean up your supply chain."}}' />
 <meta name='twitter:site' content='@wastenotworld' />
 <meta name='twitter:card' content='summary_large_image' />
 <meta name='twitter:title' content='{% if renderData.title %}{{renderData.title}} - {% endif %}Waste Not' />
-<meta name='twitter:image:src' content='https://wastenot.world/images/opengraph.jpg' />
-<meta name='twitter:description' content='Sustainable suppliers for packaging, fashion, interiors, restaurants and more. Clean up your supply chain.' />
+<meta name='twitter:image:src' content='{{ renderData.image or "https://wastenot.world/images/opengraph.jpg"}}' />
+<meta name='twitter:description' content='{{ renderData.description or "Sustainable suppliers for packaging, fashion, interiors, restaurants and more. Clean up your supply chain."}}' />

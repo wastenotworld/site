@@ -2,8 +2,10 @@
 layout: layouts/base.njk
 templateClass: tmpl-listing
 renderData:
-  title: "{{listing.content.main.name}}"
+  title: "{{listing.content.main.name}} - Waste Not"
   slug: "listing/{{listing.content.main.slug.current}}"
+  description: "{{listing.description}}"
+  image: "{{listing.content.main.image.url}}"
 ---
 
 {% set title = listing.content.main.name %}

@@ -75,7 +75,7 @@
           <span class='listing__expand-name-l s14 sm16'><a class='cg' href='/supplier/{{listing.supplier.content.main.slug.current}}'>{{listing.supplier.content.main.listings.length}} listings</span>
         {% endif %}
       </div>
-      <button class='listing__expand-source naked js-source-open'>
+      <button aria-label='open source form' class='listing__expand-source naked js-source-open'>
         {% include 'opensource.njk'  %}
       </button>
     </div>
@@ -86,8 +86,8 @@
       <a href='/listing/{{ listing.content.main.slug.current | slug }}/' class='p1 x caps s14 sm16 listing__expand-a block'>Share</a>
     </div>
     <div class='px1 f jcc aic listing__expand-close source-open-hide '>
-      <button class='naked js-expand-open'>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button class='naked js-expand-open' aria-label='expand/contract listing card information'>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.812 14.1157C10.8045 13.599 10.3852 13.1797 9.86099 13.1722L1.68377 13.1197C0.702802 13.1048 0.717779 14.58 1.70623 14.5949L7.89906 14.6773C8.10124 14.6773 8.15366 14.7971 8.00389 14.9469L0.216062 22.7347C-0.0684939 23.0193 -0.0610038 23.4836 0.23104 23.7756C0.523084 24.0676 0.987357 24.0751 1.27191 23.7906L9.05974 16.0027C9.20951 15.853 9.32932 15.8979 9.32932 16.1076L9.41169 22.3004C9.42667 23.2814 10.9019 23.3038 10.8869 22.3229L10.812 14.1157ZM13.1858 9.8848C13.1933 10.4015 13.6126 10.8208 14.1368 10.8283L22.314 10.8807C23.295 10.8957 23.28 9.42053 22.2916 9.40555L16.0987 9.32318C15.8966 9.32318 15.8441 9.20337 15.9939 9.0536L23.7892 1.26577C24.0738 0.981212 24.0663 0.516937 23.7743 0.224894C23.4822 -0.0671501 23.0179 -0.0746384 22.7334 0.209917L14.9455 7.99775C14.7958 8.14752 14.676 8.10259 14.676 7.89291L14.5936 1.70009C14.5786 0.719121 13.1034 0.696656 13.1184 1.67762L13.1858 9.8848Z" fill="black"/>
         </svg>
       </button>

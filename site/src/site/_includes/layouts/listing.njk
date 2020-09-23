@@ -3,6 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-listing
 renderData:
   title: "{{listing.content.main.name}}"
+  slug: "listing/{{listing.content.main.slug.current}}"
 ---
 
 {% set title = listing.content.main.name %}

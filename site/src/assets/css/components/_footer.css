@@ -82,6 +82,12 @@
     @media (min-width: 1200px) {
       margin-top: 3.1rem;
     }
+    a {
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      color: var(--green);
+    }
   }
   .newsletter {
     border-top: 1px solid black;

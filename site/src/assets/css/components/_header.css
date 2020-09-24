@@ -17,6 +17,12 @@
     display: none;
     @media (min-width: 800px) {
       display: flex;
+      a {
+        transition: all 0.3s ease-in-out;
+      }
+      a:hover {
+        color: var(--green);
+      }
     }
   }
   &__inner {

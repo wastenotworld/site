@@ -35,9 +35,9 @@
     <div class="">
       {% include "screensaver.njk" %}
       {% include "header.njk" %}
-      <div class='main' id='root'>
+      <main role='main' class='main' id='root'>
         {{ content | safe }}
-      </div>
+      </main>
     </div>
     {% include "footer.njk" %}
     <script src='/bundle/scripts/index.js'></script>

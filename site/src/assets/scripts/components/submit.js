@@ -54,7 +54,9 @@ export default component((node) => {
     })
       .then(res => res.json())
       .then(json => {
-        console.log('wifo?', json)
+        const success = document.querySelector('.js-supplier-success')
+        success.classList.remove('hidden')
+        supplierForm.reset()
       })
   })
 

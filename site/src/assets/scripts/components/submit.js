@@ -66,12 +66,18 @@ export default component((node) => {
     e.preventDefault()
 
     const formFields = `{${encode(e.currentTarget.elements)}}`
-    console.log('formsss', formFields)
     fetch('/.netlify/functions/github', {
       method: 'POST',
       body: formFields,
       headers: { 'Content-Type': 'application/json' }
     })
+      .then(res => res.json())
+      .then(() => {
+
+        const success = document.querySelector('.js-github-success')
+        success.classList.remove('hidden')
+        gitHubForm.reset()
+      })
   })
 
   new SlimSelect({

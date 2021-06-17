@@ -61,7 +61,7 @@
     "operator": "^1.6.1",
     "picoapp": "^3.6.1",
     "poppy": "^1.0.3",
-    "postcss": "^7.0.17",
+    "postcss": "^7.0.36",
     "postcss-calc": "^6.0.2",
     "postcss-color-mix": "^1.1.0",
     "postcss-comment": "^2.0.0",
